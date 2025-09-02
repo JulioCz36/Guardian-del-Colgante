@@ -11,13 +11,18 @@ public class disparo : MonoBehaviour
     [SerializeField] private movimiento playerMovimiento;
     [SerializeField] private GameObject pebete;
     [SerializeField] private Transform pebeteTransform;
+
+    private Animator jugadorAnimator;
     public bool puedeDisparar;
 
     private float timer;
     public float tiempoEntreDisparos;
+
+
     private void OnEnable()
     {
         mainCamara = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        jugadorAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     void Update()
@@ -46,6 +51,7 @@ public class disparo : MonoBehaviour
         if (Input.GetButton("Fire1") && puedeDisparar && jugador.PuedeDisparar())
         {
             puedeDisparar = false;
+            jugadorAnimator.SetTrigger("lanzar");
             jugador.UsarBala();
             Instantiate(pebete, pebeteTransform.position, Quaternion.identity);
             Debug.Log("Munición restante: " + jugador.GetMunicionActual());

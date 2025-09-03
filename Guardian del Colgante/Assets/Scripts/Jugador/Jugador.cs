@@ -4,7 +4,7 @@ public class Jugador : MonoBehaviour
 {
     [Header("Configuracion")]
     [SerializeField] private float vida = 100f;
-    [SerializeField] private int municionMax = 10; 
+    [SerializeField] private int municionMax = 10;
     [SerializeField] private int municionActual;
 
     private void OnEnable()

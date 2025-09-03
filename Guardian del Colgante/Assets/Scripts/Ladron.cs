@@ -79,7 +79,7 @@ public class Ladron : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player")) {
             Debug.Log("GOLPEANDO A JUGADOR!");
-            collision.gameObject.GetComponent<Jugador>().InfligirDano(this.danoAJugador);
+            collision.gameObject.GetComponent<Jugador>().ModificarVida(-this.danoAJugador);
         }
     }
     // Boludeces para que apunte para un lado mas o menos aleatorio.

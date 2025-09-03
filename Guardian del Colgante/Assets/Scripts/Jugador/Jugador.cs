@@ -21,9 +21,6 @@ public class Jugador : MonoBehaviour
             Morir();
         }
     }
-    public void InfligirDano(float dano) {
-        this.ModificarVida(-dano);
-    }
     public bool PuedeDisparar()
     {
         return municionActual > 0;

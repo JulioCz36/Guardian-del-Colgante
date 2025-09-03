@@ -8,24 +8,25 @@ public class Ladron : MonoBehaviour
 {
     
     // El dano es el que le va a infligir al material objetivo
-    Rigidbody2D rb;
-    public float dano = 1.0f;
+    protected Rigidbody2D rb;
+    public float danoAEstructura = 1.0f;
+    public float danoAJugador = 15.0f;
     public float speed = 5.0f;
     public float tiempoFreno = 1f;
     public float tiempoBusqueda = 1f;
     public float velocidadDeEscape = 7.0f;
     
 
-    private GameObject materialObjetivo;
-    private GameObject player;
+    protected GameObject materialObjetivo;
+    protected GameObject player;
 
-    private string estado = "busqueda";
-    private float dist = 0.0f;
-    private float rAngle = 0.0f;
-    private float frenadoTimer = 0.0f;
-    private float busquedaTimer = 0.0f;
+    protected string estado = "busqueda";
+    protected float dist = 0.0f;
+    protected float rAngle = 0.0f;
+    protected float frenadoTimer = 0.0f;
+    protected float busquedaTimer = 0.0f;
 
-    private Vector2 direccion = Vector2.zero;
+    protected Vector2 direccion = Vector2.zero;
 
     void Start()
     {
@@ -66,38 +67,42 @@ public class Ladron : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         
         if (collision.gameObject.CompareTag("MaterialObjetivo")) {
             // Sinceramente no se si es la mejor manera de resolver esto.
 
             // Básicamente agarro el script MaterialObjetivo del MaterialObjetivo y ejecuto la función InfligirDano desde acá.
-            collision.gameObject.GetComponent<MaterialObjetivo>().InfligirDano(this.dano);
+            collision.gameObject.GetComponent<MaterialObjetivo>().InfligirDano(this.danoAEstructura);
             this.estado = "escape";
+        }
+        if (collision.gameObject.CompareTag("Player")) {
+            Debug.Log("GOLPEANDO A JUGADOR!");
+            collision.gameObject.GetComponent<Jugador>().InfligirDano(this.danoAJugador);
         }
     }
     // Boludeces para que apunte para un lado mas o menos aleatorio.
-    private float sigmoid(float x)
+    protected float sigmoid(float x)
     {
         float factor = 15.0f; // Para retocar.
         return 1 / (1 + Mathf.Exp(-x + factor));
     }
-    private float randomAngle(float distance)
+    protected float randomAngle(float distance)
     {
         float maxAngle = (Mathf.PI / 4);
         //Debug.Log("Sigmoide de la distancia: " + sigmoid(distance));
         return sigmoid(distance) * Random.Range(-maxAngle, maxAngle);
     }
 
-    private Vector2 rotatedVector(Vector2 v, float angle)
+    protected Vector2 rotatedVector(Vector2 v, float angle)
     {
         float c = Mathf.Cos(angle);
         float s = Mathf.Sin(angle);
         return new Vector2(c * v.x - s * v.y, s * v.x + c * v.y);
     }
 
-    private void ActualizarDireccion() {
+    protected void ActualizarDireccion() {
         dist = Vector2.Distance(materialObjetivo.transform.position, transform.position);
         rAngle = randomAngle(dist);
         direccion = rotatedVector((materialObjetivo.transform.position - transform.position).normalized, rAngle);

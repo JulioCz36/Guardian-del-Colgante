@@ -54,7 +54,6 @@ public class disparo : MonoBehaviour
             jugadorAnimator.SetTrigger("lanzar");
             jugador.UsarBala();
             Instantiate(pebete, pebeteTransform.position, Quaternion.identity);
-            Debug.Log("Munición restante: " + jugador.GetMunicionActual());
         }
 
     }

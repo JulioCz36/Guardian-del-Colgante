@@ -3,21 +3,27 @@ using UnityEngine;
 public class Jugador : MonoBehaviour
 {
     [Header("Configuracion")]
-    [SerializeField] private float vida = 100f;
+    [SerializeField] private int vidaMax = 100;
+    private int vidaActual;
     [SerializeField] private int municionMax = 10; 
-    [SerializeField] private int municionActual;
+    private int municionActual;
+    [SerializeField] private BarraProgreso vidaBarra;
+    [SerializeField] private BarraProgreso municionBarra;
 
     private void OnEnable()
     {
         municionActual = municionMax;
+        vidaActual = vidaMax;
+        municionBarra.establecerMaximoProgreso(municionMax);
+        vidaBarra.establecerMaximoProgreso(vidaMax);
     }
-    public void ModificarVida(float puntos)
+    public void ModificarVida(int puntos)
     {
-        vida += puntos;
+        vidaActual += puntos;
+        municionBarra.establecerProgreso(vidaActual);
 
-        if (vida <= 0)
-        {
-            vida = 0;
+        if (vidaActual <= 0){
+            vidaActual = 0;
             Morir();
         }
     }
@@ -30,16 +36,12 @@ public class Jugador : MonoBehaviour
         if (municionActual > 0)
         {
             municionActual--;
+            municionBarra.establecerProgreso(municionActual);
         }
     }
     public void Recargar(int cantidad)
     {
         municionActual = Mathf.Clamp(municionActual + cantidad, 0, municionMax);
-    }
-
-    public int GetMunicionActual()
-    {
-        return municionActual;
     }
     private void Morir()
     {

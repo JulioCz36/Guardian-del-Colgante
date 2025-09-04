@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class BarraDeSaludFlotante : MonoBehaviour
@@ -8,8 +7,5 @@ public class BarraDeSaludFlotante : MonoBehaviour
     public void actualizarBarraSalud(float valorActual, float valorMax)
     {
         slider.value = valorActual / valorMax;
-    }
-    void Update()
-    {
     }
 }

@@ -40,6 +40,10 @@ public class disparo : MonoBehaviour
             playerMovimiento.VoltearSegunMouse(mousePos);
         }
 
+        Vector3 nuevaPos = pebeteTransform.localPosition;
+        nuevaPos.x = Mathf.Clamp(mousePos.x - transform.position.x, -1f, 1f);
+        pebeteTransform.localPosition = nuevaPos;
+
         if (!puedeDisparar) { 
             timer += Time.deltaTime;
             if (timer > tiempoEntreDisparos)
@@ -53,7 +57,7 @@ public class disparo : MonoBehaviour
             puedeDisparar = false;
             jugadorAnimator.SetTrigger("lanzar");
             jugador.UsarBala();
-            Instantiate(pebete, pebeteTransform.position, Quaternion.identity);
+            Instantiate(pebete, pebeteTransform.position, Quaternion.Euler(0, 0, rotZ));
         }
 
     }

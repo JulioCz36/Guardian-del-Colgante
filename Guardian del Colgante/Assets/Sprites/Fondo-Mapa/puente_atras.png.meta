@@ -1,22 +1,37 @@
 fileFormatVersion: 2
-guid: 94953d88ac18e8f4aa8d6bbbbdda3130
+guid: 28eeb367899a3b4499b5b96f4f51be6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7048580246633559254
-    second: andando_0
+      213: 1402104283400614160
+    second: puente_atras_0
   - first:
-      213: -4945666201470242389
-    second: andando_1
+      213: -2337211000632071816
+    second: puente_atras_1
   - first:
-      213: -8328533348283747952
-    second: andando_2
+      213: -6977529709956047213
+    second: puente_atras_2
   - first:
-      213: 4824069325521193168
-    second: andando_3
+      213: 6015276514871794730
+    second: puente_atras_3
   - first:
-      213: 4030895896761423162
-    second: andando_4
+      213: 8970431652883895528
+    second: puente_atras_4
+  - first:
+      213: 7013833965639675635
+    second: puente_atras_5
+  - first:
+      213: 2046715104250143129
+    second: puente_atras_6
+  - first:
+      213: 174684962216377623
+    second: puente_atras_7
+  - first:
+      213: 4016094963586084323
+    second: puente_atras_8
+  - first:
+      213: -3693353183204331006
+    second: puente_atras_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -125,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: andando_0
+      name: puente_atras_0
       rect:
         serializedVersion: 2
-        x: 1367
-        y: 88
-        width: 889
-        height: 1477
+        x: 0
+        y: 914
+        width: 4677
+        height: 2276
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2b42945c996e2e90800000000000000
-      internalID: -7048580246633559254
+      spriteID: 011b526ca66457310800000000000000
+      internalID: 1402104283400614160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: andando_1
+      name: puente_atras_1
       rect:
         serializedVersion: 2
-        x: 2540
-        y: 80
-        width: 913
-        height: 1622
+        x: 555
+        y: 3124
+        width: 10
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba1f5b30bc67d5bb0800000000000000
-      internalID: -4945666201470242389
+      spriteID: 879a03e5afe809fd0800000000000000
+      internalID: -2337211000632071816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: andando_2
+      name: puente_atras_2
       rect:
         serializedVersion: 2
-        x: 3899
-        y: 77
-        width: 668
-        height: 1629
+        x: 1465
+        y: 665
+        width: 11
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0917d83db0b1b6c80800000000000000
-      internalID: -8328533348283747952
+      spriteID: 39ed55482b5da2f90800000000000000
+      internalID: -6977529709956047213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: andando_3
+      name: puente_atras_3
       rect:
         serializedVersion: 2
-        x: 4916
-        y: 68
-        width: 870
-        height: 1579
+        x: 3214
+        y: 664
+        width: 10
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d88c871e7982f240800000000000000
-      internalID: 4824069325521193168
+      spriteID: a2cdea6be1e8a7350800000000000000
+      internalID: 6015276514871794730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: andando_4
+      name: puente_atras_4
       rect:
         serializedVersion: 2
-        x: 6318
-        y: 96
-        width: 940
-        height: 1525
+        x: 15
+        y: 565
+        width: 26
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +243,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a355b05267e90f730800000000000000
-      internalID: 4030895896761423162
+      spriteID: 8e490189f006d7c70800000000000000
+      internalID: 8970431652883895528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puente_atras_5
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 565
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fea583b4d4265160800000000000000
+      internalID: 7013833965639675635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puente_atras_6
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 564
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991a1491b84676c10800000000000000
+      internalID: 2046715104250143129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puente_atras_7
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 547
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d72803c0b9c6200800000000000000
+      internalID: 174684962216377623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puente_atras_8
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 332
+        width: 264
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eda8c857190cb730800000000000000
+      internalID: 4016094963586084323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puente_atras_9
+      rect:
+        serializedVersion: 2
+        x: 3944
+        y: 295
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2023c0d19d29ebcc0800000000000000
+      internalID: -3693353183204331006
       vertices: []
       indices: 
       edges: []
@@ -248,11 +373,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      andando_0: -7048580246633559254
-      andando_1: -4945666201470242389
-      andando_2: -8328533348283747952
-      andando_3: 4824069325521193168
-      andando_4: 4030895896761423162
+      puente_atras_0: 1402104283400614160
+      puente_atras_1: -2337211000632071816
+      puente_atras_2: -6977529709956047213
+      puente_atras_3: 6015276514871794730
+      puente_atras_4: 8970431652883895528
+      puente_atras_5: 7013833965639675635
+      puente_atras_6: 2046715104250143129
+      puente_atras_7: 174684962216377623
+      puente_atras_8: 4016094963586084323
+      puente_atras_9: -3693353183204331006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

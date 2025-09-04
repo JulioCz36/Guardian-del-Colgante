@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 28eeb367899a3b4499b5b96f4f51be6c
+guid: aa91d3185d1bae6469b6a668353a5214
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1402104283400614160
-    second: puente_atras_0
+      213: -1115424226334319874
+    second: cabezas_0
   - first:
-      213: -2337211000632071816
-    second: puente_atras_1
+      213: 471172611153923718
+    second: cabezas_1
   - first:
-      213: -6977529709956047213
-    second: puente_atras_2
+      213: -7002027509207947474
+    second: cabezas_2
   - first:
-      213: 6015276514871794730
-    second: puente_atras_3
+      213: 6784422507898685557
+    second: cabezas_3
   - first:
-      213: 8970431652883895528
-    second: puente_atras_4
+      213: 4466731966420882050
+    second: cabezas_4
   - first:
-      213: 7013833965639675635
-    second: puente_atras_5
+      213: 8075624257211946116
+    second: cabezas_5
   - first:
-      213: 2046715104250143129
-    second: puente_atras_6
+      213: -542118705737435926
+    second: cabezas_6
   - first:
-      213: 174684962216377623
-    second: puente_atras_7
+      213: -2627004284234040577
+    second: cabezas_7
   - first:
-      213: 4016094963586084323
-    second: puente_atras_8
+      213: -4780455534076289915
+    second: cabezas_8
   - first:
-      213: -3693353183204331006
-    second: puente_atras_9
+      213: 6700718876022878071
+    second: cabezas_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -73,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -140,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puente_atras_0
+      name: cabezas_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 914
-        width: 4677
-        height: 2276
+        y: 268
+        width: 570
+        height: 606
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 011b526ca66457310800000000000000
-      internalID: 1402104283400614160
+      spriteID: efa5a7f63973580f0800000000000000
+      internalID: -1115424226334319874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_1
+      name: cabezas_1
       rect:
         serializedVersion: 2
-        x: 555
-        y: 3124
-        width: 10
-        height: 7
+        x: 601
+        y: 240
+        width: 606
+        height: 634
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 879a03e5afe809fd0800000000000000
-      internalID: -2337211000632071816
+      spriteID: 68e09b35ef0f98600800000000000000
+      internalID: 471172611153923718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_2
+      name: cabezas_2
       rect:
         serializedVersion: 2
-        x: 1465
-        y: 665
-        width: 11
-        height: 10
+        x: 1204
+        y: 244
+        width: 606
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39ed55482b5da2f90800000000000000
-      internalID: -6977529709956047213
+      spriteID: e27a526241dc3de90800000000000000
+      internalID: -7002027509207947474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_3
+      name: cabezas_3
       rect:
         serializedVersion: 2
-        x: 3214
-        y: 664
-        width: 10
-        height: 11
+        x: 1807
+        y: 186
+        width: 606
+        height: 688
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2cdea6be1e8a7350800000000000000
-      internalID: 6015276514871794730
+      spriteID: 5784775535c172e50800000000000000
+      internalID: 6784422507898685557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_4
+      name: cabezas_4
       rect:
         serializedVersion: 2
-        x: 15
-        y: 565
-        width: 26
-        height: 21
+        x: 2410
+        y: 244
+        width: 606
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e490189f006d7c70800000000000000
-      internalID: 8970431652883895528
+      spriteID: 2821665ce050dfd30800000000000000
+      internalID: 4466731966420882050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_5
+      name: cabezas_5
       rect:
         serializedVersion: 2
-        x: 2326
-        y: 565
-        width: 13
-        height: 7
+        x: 3013
+        y: 237
+        width: 606
+        height: 634
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fea583b4d4265160800000000000000
-      internalID: 7013833965639675635
+      spriteID: 48455a6b971621070800000000000000
+      internalID: 8075624257211946116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_6
+      name: cabezas_6
       rect:
         serializedVersion: 2
-        x: 2350
-        y: 564
-        width: 14
-        height: 8
+        x: 3616
+        y: 244
+        width: 606
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 991a1491b84676c10800000000000000
-      internalID: 2046715104250143129
+      spriteID: ae4fc6ec8e10a78f0800000000000000
+      internalID: -542118705737435926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_7
+      name: cabezas_7
       rect:
         serializedVersion: 2
-        x: 4628
-        y: 547
-        width: 25
-        height: 21
+        x: 4219
+        y: 240
+        width: 606
+        height: 634
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71d72803c0b9c6200800000000000000
-      internalID: 174684962216377623
+      spriteID: ffafcce95810b8bd0800000000000000
+      internalID: -2627004284234040577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_8
+      name: cabezas_8
       rect:
         serializedVersion: 2
-        x: 3635
-        y: 332
-        width: 264
-        height: 196
+        x: 4822
+        y: 241
+        width: 606
+        height: 633
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,20 +331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3eda8c857190cb730800000000000000
-      internalID: 4016094963586084323
+      spriteID: 58c15da050968adb0800000000000000
+      internalID: -4780455534076289915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puente_atras_9
+      name: cabezas_9
       rect:
         serializedVersion: 2
-        x: 3944
-        y: 295
-        width: 11
-        height: 8
+        x: 5425
+        y: 0
+        width: 605
+        height: 874
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2023c0d19d29ebcc0800000000000000
-      internalID: -3693353183204331006
+      spriteID: 77f2919d05cbdfc50800000000000000
+      internalID: 6700718876022878071
       vertices: []
       indices: 
       edges: []
@@ -363,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -373,16 +373,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      puente_atras_0: 1402104283400614160
-      puente_atras_1: -2337211000632071816
-      puente_atras_2: -6977529709956047213
-      puente_atras_3: 6015276514871794730
-      puente_atras_4: 8970431652883895528
-      puente_atras_5: 7013833965639675635
-      puente_atras_6: 2046715104250143129
-      puente_atras_7: 174684962216377623
-      puente_atras_8: 4016094963586084323
-      puente_atras_9: -3693353183204331006
+      cabezas_0: -1115424226334319874
+      cabezas_1: 471172611153923718
+      cabezas_2: -7002027509207947474
+      cabezas_3: 6784422507898685557
+      cabezas_4: 4466731966420882050
+      cabezas_5: 8075624257211946116
+      cabezas_6: -542118705737435926
+      cabezas_7: -2627004284234040577
+      cabezas_8: -4780455534076289915
+      cabezas_9: 6700718876022878071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

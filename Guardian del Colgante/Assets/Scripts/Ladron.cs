@@ -10,7 +10,7 @@ public class Ladron : MonoBehaviour
     // El dano es el que le va a infligir al material objetivo
     protected Rigidbody2D rb;
     public float danoAEstructura = 1.0f;
-    public float danoAJugador = 15.0f;
+    public int danoAJugador = 15;
     public float speed = 5.0f;
     public float tiempoFreno = 1f;
     public float tiempoBusqueda = 1f;
@@ -102,7 +102,8 @@ public class Ladron : MonoBehaviour
         return new Vector2(c * v.x - s * v.y, s * v.x + c * v.y);
     }
 
-    protected void ActualizarDireccion() {
+    protected void ActualizarDireccion()
+    {
         dist = Vector2.Distance(materialObjetivo.transform.position, transform.position);
         rAngle = randomAngle(dist);
         direccion = rotatedVector((materialObjetivo.transform.position - transform.position).normalized, rAngle);

@@ -525,7 +525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 0
   vidaMax: 3
-  barraDeSalud: {fileID: 0}
+  barraDeSalud: {fileID: 2118487429181302005}
 --- !u!114 &8907856673123842728
 MonoBehaviour:
   m_ObjectHideFlags: 0

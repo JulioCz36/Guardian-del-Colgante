@@ -71,6 +71,9 @@ public class Ladron : MonoBehaviour
 
             // Básicamente agarro el script MaterialObjetivo del MaterialObjetivo y ejecuto la función InfligirDano desde acá.
             collision.gameObject.GetComponent<MaterialObjetivo>().InfligirDano(this.danoAEstructura);
+            if (materialObjetivo.transform.position.x - transform.position.x > 0) {
+                velocidadDeEscape *= -1;
+            }
             this.estado = "escape";
         }
         if (collision.gameObject.CompareTag("Player")) {

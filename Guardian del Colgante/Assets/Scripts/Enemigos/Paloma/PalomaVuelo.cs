@@ -9,7 +9,7 @@ public class PalomaVuelo : MonoBehaviour
     public float waveAmplitude = 0.3f;
     public float waveFrequency = 2f;
 
-    [Header("Vuelo en círculos (modo ataque)")]
+    [Header("Vuelo en círculos")]
     public float radioX = 1f;         
     public float radioY = 0.5f;      
     public float velocidadCircular = 2f;
@@ -18,7 +18,7 @@ public class PalomaVuelo : MonoBehaviour
     private float yInicial;
     private Rigidbody2D rb;
 
-    private bool enZonaAtaque = false;
+    public bool enZonaAtaque = false;
     private Vector2 centroVuelo;
     private float tiempoCircular;
 

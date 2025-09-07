@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: ee684c7fce902274dbbce92c2c52cce2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7717741755746023646
+    second: paloma_0
+  - first:
+      213: 2976194024364115550
+    second: paloma_1
+  - first:
+      213: 3728860463203901982
+    second: paloma_2
+  - first:
+      213: -6454773063141063778
+    second: paloma_3
+  - first:
+      213: -2005976705576376939
+    second: paloma_4
+  - first:
+      213: -6397164054643920925
+    second: paloma_5
+  - first:
+      213: 1152228772231284058
+    second: paloma_6
+  - first:
+      213: 4715947284420014102
+    second: paloma_7
+  - first:
+      213: 191131741691458311
+    second: paloma_8
+  - first:
+      213: 628506063144401935
+    second: paloma_9
+  - first:
+      213: -987625459524758607
+    second: paloma_10
+  - first:
+      213: -772275214181667651
+    second: paloma_11
+  - first:
+      213: 3604922961668237637
+    second: paloma_12
+  - first:
+      213: -3067226972105556916
+    second: paloma_13
+  - first:
+      213: 4955888432796008296
+    second: paloma_14
+  - first:
+      213: 6139370237499373137
+    second: paloma_15
+  - first:
+      213: -3778444227265272849
+    second: paloma_16
+  - first:
+      213: -6294307877460493574
+    second: paloma_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: paloma_0
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1070
+        width: 1492
+        height: 1070
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2270f8473c215e490800000000000000
+      internalID: -7717741755746023646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_1
+      rect:
+        serializedVersion: 2
+        x: 3013
+        y: 1070
+        width: 1559
+        height: 1070
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e560dd452b09d4920800000000000000
+      internalID: 2976194024364115550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_2
+      rect:
+        serializedVersion: 2
+        x: 5488
+        y: 933
+        width: 1358
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12644eb5d29fb330800000000000000
+      internalID: 3728860463203901982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_3
+      rect:
+        serializedVersion: 2
+        x: 8087
+        y: 1062
+        width: 1159
+        height: 1263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9387b1191a0c66a0800000000000000
+      internalID: -6454773063141063778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_4
+      rect:
+        serializedVersion: 2
+        x: 10487
+        y: 1062
+        width: 1159
+        height: 1263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595696c70d65924e0800000000000000
+      internalID: -2005976705576376939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_5
+      rect:
+        serializedVersion: 2
+        x: 12688
+        y: 1070
+        width: 1358
+        height: 1255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef2d099f25b837a0800000000000000
+      internalID: -6397164054643920925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_6
+      rect:
+        serializedVersion: 2
+        x: 13540
+        y: 885
+        width: 120
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5584dca6f98dff00800000000000000
+      internalID: 1152228772231284058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_7
+      rect:
+        serializedVersion: 2
+        x: 15147
+        y: 1059
+        width: 1299
+        height: 1266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610b25ba119627140800000000000000
+      internalID: 4715947284420014102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_8
+      rect:
+        serializedVersion: 2
+        x: 15955
+        y: 629
+        width: 53
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70332d07e4907a200800000000000000
+      internalID: 191131741691458311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_9
+      rect:
+        serializedVersion: 2
+        x: 15974
+        y: 412
+        width: 110
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cb6e83fe6e8b800800000000000000
+      internalID: 628506063144401935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_10
+      rect:
+        serializedVersion: 2
+        x: 18355
+        y: 629
+        width: 53
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b315e190ef3b42f0800000000000000
+      internalID: -987625459524758607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_11
+      rect:
+        serializedVersion: 2
+        x: 18374
+        y: 412
+        width: 110
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbcecddc8c35845f0800000000000000
+      internalID: -772275214181667651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_12
+      rect:
+        serializedVersion: 2
+        x: 20705
+        y: 82
+        width: 366
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54962ec7552470230800000000000000
+      internalID: 3604922961668237637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_13
+      rect:
+        serializedVersion: 2
+        x: 23143
+        y: 247
+        width: 29
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cb62ad1550f65d0800000000000000
+      internalID: -3067226972105556916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_14
+      rect:
+        serializedVersion: 2
+        x: 23180
+        y: 247
+        width: 52
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ff54fa54ad6c440800000000000000
+      internalID: 4955888432796008296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_15
+      rect:
+        serializedVersion: 2
+        x: 23235
+        y: 287
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15671c604bc633550800000000000000
+      internalID: 6139370237499373137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_16
+      rect:
+        serializedVersion: 2
+        x: 23248
+        y: 256
+        width: 53
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe36a3e8ef4409bc0800000000000000
+      internalID: -3778444227265272849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paloma_17
+      rect:
+        serializedVersion: 2
+        x: 23105
+        y: 82
+        width: 366
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa3609855026a8a0800000000000000
+      internalID: -6294307877460493574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      paloma_0: -7717741755746023646
+      paloma_1: 2976194024364115550
+      paloma_10: -987625459524758607
+      paloma_11: -772275214181667651
+      paloma_12: 3604922961668237637
+      paloma_13: -3067226972105556916
+      paloma_14: 4955888432796008296
+      paloma_15: 6139370237499373137
+      paloma_16: -3778444227265272849
+      paloma_17: -6294307877460493574
+      paloma_2: 3728860463203901982
+      paloma_3: -6454773063141063778
+      paloma_4: -2005976705576376939
+      paloma_5: -6397164054643920925
+      paloma_6: 1152228772231284058
+      paloma_7: 4715947284420014102
+      paloma_8: 191131741691458311
+      paloma_9: 628506063144401935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

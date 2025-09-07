@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2268398075484199933}
   - component: {fileID: 3635587073292112226}
   - component: {fileID: 2118487429181302005}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: BarraSalud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,8 +115,8 @@ GameObject:
   - component: {fileID: 9005287744673623847}
   - component: {fileID: 6592798056378192364}
   - component: {fileID: 5127700044167464400}
-  m_Layer: 7
-  m_Name: Canvas
+  m_Layer: 10
+  m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 9020546394215019707}
   - component: {fileID: 2013661588326172807}
   - component: {fileID: 3492536233789454762}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 5029860064327883880}
   - component: {fileID: 4216089906022150967}
   - component: {fileID: 3265832751477347531}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,9 +368,9 @@ GameObject:
   - component: {fileID: 5292475473201774467}
   - component: {fileID: 6385646212774538142}
   - component: {fileID: 82023402994439385}
-  - component: {fileID: 5074825781597429371}
-  m_Layer: 7
-  m_Name: Vendedor Ambulante
+  - component: {fileID: 7527121270624029696}
+  m_Layer: 10
+  m_Name: Paloma
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.742662, y: -0.7496861, z: -0.0203747}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.67, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3369429991251419620}
@@ -404,10 +404,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.3
   m_LinearDamping: 0
   m_AngularDamping: 0
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -461,10 +461,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1605193307
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0, g: 0.96163225, b: 1, a: 1}
+  m_Color: {r: 0.8301887, g: 0.71160346, b: 0.70096123, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -508,8 +508,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: -0.000002313016}
+  m_Size: {x: 0.9999998, y: 2.0687768}
   m_Direction: 0
 --- !u!114 &82023402994439385
 MonoBehaviour:
@@ -525,8 +525,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 0
   vidaMax: 3
-  barraDeSalud: {fileID: 2118487429181302005}
---- !u!114 &5074825781597429371
+  barraDeSalud: {fileID: 0}
+--- !u!114 &7527121270624029696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -535,18 +535,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5903741318137246497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7778be92196954d47a825361df95832f, type: 3}
+  m_Script: {fileID: 11500000, guid: 01275379e3615ca4189675406899730c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanciaHastaEmpezarAAtacar: 10
-  cadenciaDeTiroDeCascotes: 1
-  tiempoTiro: 0.8
-  gravedad: 5
-  offsetPosible: 1
-  danoAEstructura: 0
-  danoAJugador: 20
-  speed: 6
-  cascote: {fileID: 5793776095489506585, guid: 55a330b53e09a654bbdfad86c4bffde8, type: 3}
+  velocidadX: -2
+  waveAmplitude: 0.5
+  waveFrequency: 2
 --- !u!1 &6368823289513059186
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6847991750613612629}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

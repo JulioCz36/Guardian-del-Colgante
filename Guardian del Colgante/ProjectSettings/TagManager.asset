@@ -6,20 +6,22 @@ TagManager:
   tags:
   - Enemigo
   - MaterialObjetivo
+  - HurtboxJugador
+  - ZonaPaloma
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PlayerBody
   - Water
   - UI
-  - Enemigo
-  - Ladron
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlayerHurtbox
+  - MaterialHurtbox
+  - MaterialBody
+  - EnemyBody
+  - EnemyHurtbox
+  - EnemyHitbox
+  - Item
   - 
   - 
   - 
@@ -43,11 +45,11 @@ TagManager:
   - name: fondo
     uniqueID: 2175830811
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: nubes
     uniqueID: 961770279
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: atras
     uniqueID: 2305763075

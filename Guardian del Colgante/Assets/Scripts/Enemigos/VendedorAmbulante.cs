@@ -8,7 +8,6 @@ public class VendedorAmbulante : HinchaColon
         rb = GetComponent<Rigidbody2D>();
         materialObjetivo = GameObject.FindGameObjectWithTag("MaterialObjetivo");
         player = GameObject.FindGameObjectWithTag("Player");
-        //timerCascote = cadenciaDeTiroDeCascotes;
         ActualizarDireccion();
     }
     void Update()

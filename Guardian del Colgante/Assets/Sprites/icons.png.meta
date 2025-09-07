@@ -1,37 +1,52 @@
 fileFormatVersion: 2
-guid: aa91d3185d1bae6469b6a668353a5214
+guid: e4ab7d7e894a8954c98e376ba6c1f469
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1115424226334319874
-    second: cabezas_0
+      213: -2978653956524333172
+    second: icons_0
   - first:
-      213: 471172611153923718
-    second: cabezas_1
+      213: -299690340437171572
+    second: icons_1
   - first:
-      213: -7002027509207947474
-    second: cabezas_2
+      213: -1290855366162983238
+    second: icons_2
   - first:
-      213: 6784422507898685557
-    second: cabezas_3
+      213: -2248273014285675650
+    second: icons_3
   - first:
-      213: 4466731966420882050
-    second: cabezas_4
+      213: -2696506250795634678
+    second: icons_4
   - first:
-      213: 8075624257211946116
-    second: cabezas_5
+      213: 6621252853494989987
+    second: icons_5
   - first:
-      213: -542118705737435926
-    second: cabezas_6
+      213: 3357360333254942192
+    second: icons_6
   - first:
-      213: -2627004284234040577
-    second: cabezas_7
+      213: -4297203505398261690
+    second: icons_7
   - first:
-      213: -4780455534076289915
-    second: cabezas_8
+      213: 4202938828118557322
+    second: icons_8
   - first:
-      213: 6700718876022878071
-    second: cabezas_9
+      213: 2189712646507832853
+    second: icons_9
+  - first:
+      213: 3876512272233767631
+    second: icons_10
+  - first:
+      213: -5166432130525955749
+    second: icons_11
+  - first:
+      213: 7627503616358371109
+    second: icons_12
+  - first:
+      213: -1414468336072662494
+    second: icons_13
+  - first:
+      213: 8890533060992490834
+    second: icons_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -140,13 +155,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cabezas_0
+      name: icons_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 268
-        width: 570
-        height: 606
+        x: 52
+        y: 272
+        width: 1012
+        height: 1179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efa5a7f63973580f0800000000000000
-      internalID: -1115424226334319874
+      spriteID: c872e841202b9a6d0800000000000000
+      internalID: -2978653956524333172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_1
+      name: icons_1
       rect:
         serializedVersion: 2
-        x: 601
-        y: 240
-        width: 606
-        height: 634
+        x: 1158
+        y: 347
+        width: 961
+        height: 1251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68e09b35ef0f98600800000000000000
-      internalID: 471172611153923718
+      spriteID: c8260a3293947dbf0800000000000000
+      internalID: -299690340437171572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_2
+      name: icons_2
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 244
-        width: 606
-        height: 630
+        x: 2210
+        y: 362
+        width: 1006
+        height: 1235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e27a526241dc3de90800000000000000
-      internalID: -7002027509207947474
+      spriteID: ab6d27b32e5f51ee0800000000000000
+      internalID: -1290855366162983238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_3
+      name: icons_3
       rect:
         serializedVersion: 2
-        x: 1807
-        y: 186
-        width: 606
-        height: 688
+        x: 3350
+        y: 355
+        width: 810
+        height: 955
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5784775535c172e50800000000000000
-      internalID: 6784422507898685557
+      spriteID: e73d769fa978cc0e0800000000000000
+      internalID: -2248273014285675650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_4
+      name: icons_4
       rect:
         serializedVersion: 2
-        x: 2410
-        y: 244
-        width: 606
-        height: 630
+        x: 4320
+        y: 312
+        width: 999
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2821665ce050dfd30800000000000000
-      internalID: 4466731966420882050
+      spriteID: a00b4b20ad5149ad0800000000000000
+      internalID: -2696506250795634678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_5
+      name: icons_5
       rect:
         serializedVersion: 2
-        x: 3013
-        y: 237
-        width: 606
-        height: 634
+        x: 5398
+        y: 197
+        width: 1006
+        height: 1177
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48455a6b971621070800000000000000
-      internalID: 8075624257211946116
+      spriteID: 3a44c9ca36a63eb50800000000000000
+      internalID: 6621252853494989987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_6
+      name: icons_6
       rect:
         serializedVersion: 2
-        x: 3616
-        y: 244
-        width: 606
-        height: 630
+        x: 6645
+        y: 347
+        width: 751
+        height: 1016
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae4fc6ec8e10a78f0800000000000000
-      internalID: -542118705737435926
+      spriteID: 0fdd5ae5f6db79e20800000000000000
+      internalID: 3357360333254942192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_7
+      name: icons_7
       rect:
         serializedVersion: 2
-        x: 4219
-        y: 240
-        width: 606
-        height: 634
+        x: 7643
+        y: 264
+        width: 893
+        height: 1235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,20 +324,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffafcce95810b8bd0800000000000000
-      internalID: -2627004284234040577
+      spriteID: 6485c2ded244d54c0800000000000000
+      internalID: -4297203505398261690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_8
+      name: icons_8
       rect:
         serializedVersion: 2
-        x: 4822
-        y: 241
-        width: 606
-        height: 633
+        x: 8638
+        y: 123
+        width: 1074
+        height: 1643
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,20 +346,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58c15da050968adb0800000000000000
-      internalID: -4780455534076289915
+      spriteID: a8204b69896d35a30800000000000000
+      internalID: 4202938828118557322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cabezas_9
+      name: icons_9
       rect:
         serializedVersion: 2
-        x: 5425
-        y: 0
-        width: 605
-        height: 874
+        x: 9847
+        y: 597
+        width: 838
+        height: 819
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +368,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77f2919d05cbdfc50800000000000000
-      internalID: 6700718876022878071
+      spriteID: 516a747ec0c636e10800000000000000
+      internalID: 2189712646507832853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_10
+      rect:
+        serializedVersion: 2
+        x: 10868
+        y: 577
+        width: 952
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2afe97f532cc530800000000000000
+      internalID: 3876512272233767631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_11
+      rect:
+        serializedVersion: 2
+        x: 11910
+        y: 506
+        width: 1043
+        height: 1039
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59f5d7a9552d48b0800000000000000
+      internalID: -5166432130525955749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_12
+      rect:
+        serializedVersion: 2
+        x: 13038
+        y: 631
+        width: 726
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f4c0870265ad960800000000000000
+      internalID: 7627503616358371109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_13
+      rect:
+        serializedVersion: 2
+        x: 13530
+        y: 1170
+        width: 64
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222e952ea8cce5ce0800000000000000
+      internalID: -1414468336072662494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_14
+      rect:
+        serializedVersion: 2
+        x: 14145
+        y: 557
+        width: 568
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dd25407b4816b70800000000000000
+      internalID: 8890533060992490834
       vertices: []
       indices: 
       edges: []
@@ -373,16 +498,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cabezas_0: -1115424226334319874
-      cabezas_1: 471172611153923718
-      cabezas_2: -7002027509207947474
-      cabezas_3: 6784422507898685557
-      cabezas_4: 4466731966420882050
-      cabezas_5: 8075624257211946116
-      cabezas_6: -542118705737435926
-      cabezas_7: -2627004284234040577
-      cabezas_8: -4780455534076289915
-      cabezas_9: 6700718876022878071
+      icons_0: -2978653956524333172
+      icons_1: -299690340437171572
+      icons_10: 3876512272233767631
+      icons_11: -5166432130525955749
+      icons_12: 7627503616358371109
+      icons_13: -1414468336072662494
+      icons_14: 8890533060992490834
+      icons_2: -1290855366162983238
+      icons_3: -2248273014285675650
+      icons_4: -2696506250795634678
+      icons_5: 6621252853494989987
+      icons_6: 3357360333254942192
+      icons_7: -4297203505398261690
+      icons_8: 4202938828118557322
+      icons_9: 2189712646507832853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

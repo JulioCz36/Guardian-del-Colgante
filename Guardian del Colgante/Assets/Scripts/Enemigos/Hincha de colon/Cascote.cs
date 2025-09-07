@@ -1,4 +1,3 @@
-using System.Threading;
 using UnityEngine;
 
 public class Cascote : MonoBehaviour
@@ -10,13 +9,11 @@ public class Cascote : MonoBehaviour
     private float time_prime;
 
     private float danoAEstructura;
-    int danoAJugador;
+    private int danoAJugador;
 
     private float time = 0.0f;
-
     private float timeVivoCascote = 5.0f;
     private float timerCascoteVivo = 0.0f;
-
     private Vector2 v0;
 
     public void Init(Vector2 p1, Vector2 p2, float gravity, float time_prime, float danoAEstructura, int danoAJugador) {
@@ -35,20 +32,17 @@ public class Cascote : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject);
+        if (collision.gameObject.CompareTag("HurtboxJugador"))
+        {
+            collision.SendMessageUpwards("ModificarVida",-this.danoAJugador);
+            Destroy(gameObject);
+            return;
+        }
         if (collision.gameObject.CompareTag("MaterialObjetivo"))
         {
-            // Sinceramente no se si es la mejor manera de resolver esto.
-
-            // Básicamente agarro el script MaterialObjetivo del MaterialObjetivo y ejecuto la función InfligirDano desde acá.
-            collision.gameObject.GetComponent<MaterialObjetivo>().InfligirDano(this.danoAEstructura);
+            collision.SendMessageUpwards("InfligirDano", danoAEstructura);
             Destroy(gameObject);
-        }
-        if (collision.gameObject.CompareTag("Player"))
-        {
-
-            collision.gameObject.GetComponent<Jugador>().ModificarVida(-this.danoAJugador);
-            Destroy(gameObject);
+            return;
         }
     }
 

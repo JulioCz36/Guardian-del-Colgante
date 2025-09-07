@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2268398075484199933}
   - component: {fileID: 3635587073292112226}
   - component: {fileID: 2118487429181302005}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: BarraSalud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 9005287744673623847}
   - component: {fileID: 6592798056378192364}
   - component: {fileID: 5127700044167464400}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 9020546394215019707}
   - component: {fileID: 2013661588326172807}
   - component: {fileID: 3492536233789454762}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 5029860064327883880}
   - component: {fileID: 4216089906022150967}
   - component: {fileID: 3265832751477347531}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 6385646212774538142}
   - component: {fileID: 82023402994439385}
   - component: {fileID: 5771748362209987291}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Hincha de Colon
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -546,9 +546,6 @@ MonoBehaviour:
   danoAEstructura: 1
   danoAJugador: 15
   speed: 5
-  tiempoFreno: 1
-  tiempoBusqueda: 1
-  velocidadDeEscape: 7
   cascote: {fileID: 5793776095489506585, guid: 2abb09a769e60734cb11bb153231453f, type: 3}
 --- !u!1 &6368823289513059186
 GameObject:
@@ -559,7 +556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6847991750613612629}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

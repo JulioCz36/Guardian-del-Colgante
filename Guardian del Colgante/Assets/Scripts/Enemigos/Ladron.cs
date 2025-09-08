@@ -65,8 +65,8 @@ public class Ladron : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        if (collision.gameObject.CompareTag("MaterialObjetivo")) {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("MaterialObjetivoPadre")) {
             // Sinceramente no se si es la mejor manera de resolver esto.
 
             // Básicamente agarro el script MaterialObjetivo del MaterialObjetivo y ejecuto la función InfligirDano desde acá.

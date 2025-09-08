@@ -7,11 +7,14 @@ public class AtaquePaloma : MonoBehaviour
     public GameObject cacaPrefab;
     public Transform puntoDeCaca;
     public float tiempoEntreCacas = 2f;
+    
+    private Animator animator;
     private float contadorCaca;
 
     void Start()
     {
         contadorCaca = tiempoEntreCacas;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -21,9 +24,15 @@ public class AtaquePaloma : MonoBehaviour
             contadorCaca -= Time.deltaTime;
             if (contadorCaca <= 0f)
             {
-                Instantiate(cacaPrefab, puntoDeCaca.position, Quaternion.identity);
+                animator.SetTrigger("lanzar");
                 contadorCaca = tiempoEntreCacas;
             }
         }
+    }
+
+    // Llamado desde Animation Event
+    public void LanzarCaca()
+    {
+        Instantiate(cacaPrefab, puntoDeCaca.position, Quaternion.identity);
     }
 }

@@ -11,8 +11,11 @@ public class PalomaVuelo : MonoBehaviour
 
     [Header("Vuelo en círculos")]
     public float radioX = 1f;         
-    public float radioY = 0.5f;      
+    public float radioY = 0.5f;
     public float velocidadCircular = 2f;
+
+    [Header("Zona de Ataque")]
+    public Transform zonaPaloma;
 
 
     private float yInicial;
@@ -21,11 +24,21 @@ public class PalomaVuelo : MonoBehaviour
     public bool enZonaAtaque = false;
     private Vector2 centroVuelo;
     private float tiempoCircular;
+    private bool vieneDesdeIzquierda;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         yInicial = transform.position.y;
+        if (zonaPaloma != null)
+        {
+            velocidadX = (zonaPaloma.position.x > transform.position.x) ? Mathf.Abs(velocidadX) : -Mathf.Abs(velocidadX);
+        }
+        vieneDesdeIzquierda = zonaPaloma.position.x > transform.position.x;
+        if (vieneDesdeIzquierda)
+            transform.localScale = new Vector3(-.15f, .15f, 1); 
+        else
+            transform.localScale = new Vector3(.15f, .15f, 1);
     }
 
     void FixedUpdate()
@@ -45,10 +58,25 @@ public class PalomaVuelo : MonoBehaviour
             // volando alrededor del centro de vuelo
             tiempoCircular += Time.fixedDeltaTime * velocidadCircular;
 
-            float x = centroVuelo.x + Mathf.Cos(tiempoCircular) * radioX;
-            float y = centroVuelo.y + Mathf.Sin(tiempoCircular) * radioY;
+            float x, y;
+
+            if (vieneDesdeIzquierda)
+            {
+                x = centroVuelo.x - Mathf.Cos(tiempoCircular) * radioX;
+                y = centroVuelo.y + Mathf.Sin(tiempoCircular) * radioY;
+            }
+            else // viene desde derecha
+            {
+                x = centroVuelo.x + Mathf.Cos(tiempoCircular) * radioX;
+                y = centroVuelo.y + Mathf.Sin(tiempoCircular) * radioY;
+            }
 
             rb.MovePosition(new Vector2(x, y));
+
+            if (x < centroVuelo.x)
+                transform.localScale = new Vector3(-.15f, .15f, 1); // derecha
+            else
+                transform.localScale = new Vector3(.15f, .15f, 1);
         }
     }
 

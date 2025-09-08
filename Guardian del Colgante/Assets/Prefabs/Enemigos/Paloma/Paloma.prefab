@@ -162,7 +162,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1605193307
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &6592798056378192364
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1056776982328111674}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Proyectil Transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ Transform:
   m_GameObject: {fileID: 4042268320452921468}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.35, y: -4.54, z: -0.31983447}
+  m_LocalPosition: {x: 3.35, y: -3.9, z: -0.31983447}
   m_LocalScale: {x: 1, y: 1.4925373, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -416,7 +416,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 14, y: 4.77, z: -0.0203747}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3369429991251419620}
@@ -481,12 +481,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.654471, y: 10.7332}
+  m_Offset: {x: 0.43743768, y: -1.3076822}
+  m_Size: {x: 7.2791033, y: 8.099303}
   m_Direction: 0
 --- !u!114 &82023402994439385
 MonoBehaviour:
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 0
   vidaMax: 3
-  barraDeSalud: {fileID: 0}
+  barraDeSalud: {fileID: 2118487429181302005}
 --- !u!114 &7527121270624029696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +521,6 @@ MonoBehaviour:
   radioX: 2
   radioY: 1
   velocidadCircular: 1.5
-  spritePaloma: {fileID: 3665886675865451580}
   zonaPaloma: {fileID: 0}
   enZonaAtaque: 0
 --- !u!1 &6368823289513059186
@@ -589,7 +588,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.02, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 894197686359335354}

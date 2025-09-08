@@ -7,6 +7,7 @@ public class PebeteScript : MonoBehaviour
     private Rigidbody2D miRigidbody;
 
     public float fuerza = 5f;
+    public float dano = 3.0f;
 
     private void OnEnable()
     {
@@ -27,11 +28,8 @@ public class PebeteScript : MonoBehaviour
     {
         if (collision.CompareTag("Enemigo"))
         {
-            Enemigo enemigo = collision.GetComponent<Enemigo>();
-            if (enemigo != null)
-            {
-                enemigo.recibirDano(1f);
-            }
+
+            collision.SendMessageUpwards("recibirDano", dano);
 
             Destroy(gameObject);
         }

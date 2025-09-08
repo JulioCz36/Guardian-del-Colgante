@@ -7,7 +7,7 @@ public class VendedorAmbulante : HinchaColon
     {
         rb = GetComponent<Rigidbody2D>();
         materialObjetivo = GameObject.FindGameObjectWithTag("MaterialObjetivo");
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
         ActualizarDireccion();
     }
     void Update()
@@ -15,26 +15,23 @@ public class VendedorAmbulante : HinchaColon
         // Máquina de estados.
         if (estado == "ataque")
         {
-            if (timerCascote >= cadenciaDeTiroDeCascotes)
+            if ( true )///timerCascote >= cadenciaDeTiroDeCascotes)
             {
-                GameObject casc = Instantiate(cascote);
-                Cascote cascScript = casc.GetComponent<Cascote>();
-                Vector2 offset = new Vector2(Random.Range(-offsetPosible, offsetPosible), Random.Range(-offsetPosible, offsetPosible));
-                Vector2 posicionFinal = new Vector2(this.player.transform.position.x, this.player.transform.position.y) + offset;
+                //GameObject casc = Instantiate(cascotePrefab);
+                //Cascote cascScript = casc.GetComponent<Cascote>();
+                //Vector2 offset = new Vector2(Random.Range(-offsetPosible, offsetPosible), Random.Range(-offsetPosible, offsetPosible));
+                //Vector2 posicionFinal = new Vector2(this.player.transform.position.x, this.player.transform.position.y) + offset;
 
-                cascScript.Init(this.transform.position, posicionFinal, -gravedad, tiempoTiro, this.danoAEstructura, this.danoAJugador);
-                timerCascote = 0.0f;
 
-                if (Vector2.Distance(player.transform.position, this.transform.position) > distanciaHastaEmpezarAAtacar)
-                {
+                //if (Vector2.Distance(player.transform.position, this.transform.position) > distanciaHastaEmpezarAAtacar)
+                //{
                     //ActualizarDireccion();
-                    estado = "busqueda";
-                }
+                  //  estado = "busqueda";
+                //}
             }
 
-            timerCascote += Time.deltaTime;
-
-            rb.linearVelocity *= 0.99f;
+           // timerCascote += Time.deltaTime;
+            rb.linearVelocity *= 0.98f;
 
         }
 
@@ -43,16 +40,16 @@ public class VendedorAmbulante : HinchaColon
             //busquedaTimer += Time.deltaTime;
             ActualizarDireccion();
             rb.linearVelocity = direccion * speed;
-            if (Vector2.Distance(player.transform.position, this.transform.position) <= distanciaHastaEmpezarAAtacar)
-            {
-                estado = "ataque";
-            }
+           // if (Vector2.Distance(player.transform.position, this.transform.position) <= distanciaHastaEmpezarAAtacar)
+            //{
+              //  estado = "ataque";
+            //}
         }
 
 
     }
     protected new void ActualizarDireccion()
     {
-        direccion = (player.transform.position - transform.position).normalized;
+       // direccion = (player.transform.position - transform.position).normalized;
     }
 }

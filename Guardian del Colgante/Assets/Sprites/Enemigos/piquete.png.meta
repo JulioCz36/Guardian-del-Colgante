@@ -1,61 +1,46 @@
 fileFormatVersion: 2
-guid: ee684c7fce902274dbbce92c2c52cce2
+guid: 11e972a853e122e41b20d2c3decbea1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7717741755746023646
-    second: paloma_0
+      213: -3056890102410421289
+    second: piquete_0
   - first:
-      213: 2976194024364115550
-    second: paloma_1
+      213: -279493423307010870
+    second: piquete_1
   - first:
-      213: 3728860463203901982
-    second: paloma_2
+      213: -7718360119118527154
+    second: piquete_2
   - first:
-      213: -6454773063141063778
-    second: paloma_3
+      213: 8238149136852913529
+    second: piquete_3
   - first:
-      213: -2005976705576376939
-    second: paloma_4
+      213: -6586828828745918026
+    second: piquete_4
   - first:
-      213: -6397164054643920925
-    second: paloma_5
+      213: -7137789756762780071
+    second: piquete_5
   - first:
-      213: 1152228772231284058
-    second: paloma_6
+      213: 864891159214882294
+    second: piquete_6
   - first:
-      213: 4715947284420014102
-    second: paloma_7
+      213: -9161044423024830958
+    second: piquete_7
   - first:
-      213: 191131741691458311
-    second: paloma_8
+      213: 1768795861173856269
+    second: piquete_8
   - first:
-      213: 628506063144401935
-    second: paloma_9
+      213: -1508651013519727870
+    second: piquete_9
   - first:
-      213: -987625459524758607
-    second: paloma_10
+      213: 6780200820156458858
+    second: piquete_10
   - first:
-      213: -772275214181667651
-    second: paloma_11
+      213: 3234409405736922607
+    second: piquete_11
   - first:
-      213: 3604922961668237637
-    second: paloma_12
-  - first:
-      213: -3067226972105556916
-    second: paloma_13
-  - first:
-      213: 4955888432796008296
-    second: paloma_14
-  - first:
-      213: 6139370237499373137
-    second: paloma_15
-  - first:
-      213: -3778444227265272849
-    second: paloma_16
-  - first:
-      213: -6294307877460493574
-    second: paloma_17
+      213: -8508948637514712400
+    second: piquete_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -164,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: paloma_0
+      name: piquete_1
       rect:
         serializedVersion: 2
-        x: 689
-        y: 1070
-        width: 1492
-        height: 1070
+        x: 466
+        y: 168
+        width: 422
+        height: 764
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2270f8473c215e490800000000000000
-      internalID: -7717741755746023646
+      spriteID: acc4aba563a0f1cf0800000000000000
+      internalID: -279493423307010870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_1
+      name: piquete_2
       rect:
         serializedVersion: 2
-        x: 3013
-        y: 1070
-        width: 1559
-        height: 1070
+        x: 974
+        y: 168
+        width: 422
+        height: 764
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e560dd452b09d4920800000000000000
-      internalID: 2976194024364115550
+      spriteID: e4506638d50e2e490800000000000000
+      internalID: -7718360119118527154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_2
+      name: piquete_3
       rect:
         serializedVersion: 2
-        x: 5488
-        y: 933
-        width: 1358
-        height: 1000
+        x: 1526
+        y: 161
+        width: 358
+        height: 779
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e12644eb5d29fb330800000000000000
-      internalID: 3728860463203901982
+      spriteID: 97d0fcc0ef8c35270800000000000000
+      internalID: 8238149136852913529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_3
+      name: piquete_4
       rect:
         serializedVersion: 2
-        x: 8087
-        y: 1062
-        width: 1159
-        height: 1263
+        x: 5086
+        y: 165
+        width: 344
+        height: 731
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9387b1191a0c66a0800000000000000
-      internalID: -6454773063141063778
+      spriteID: 6b91c4a2412e694a0800000000000000
+      internalID: -6586828828745918026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_4
+      name: piquete_5
       rect:
         serializedVersion: 2
-        x: 10487
-        y: 1062
-        width: 1159
-        height: 1263
+        x: 1951
+        y: 161
+        width: 359
+        height: 729
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 595696c70d65924e0800000000000000
-      internalID: -2005976705576376939
+      spriteID: 95e8bbaa80a71fc90800000000000000
+      internalID: -7137789756762780071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_5
+      name: piquete_6
       rect:
         serializedVersion: 2
-        x: 12688
-        y: 1070
-        width: 1358
-        height: 1255
+        x: 2390
+        y: 161
+        width: 377
+        height: 689
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ef2d099f25b837a0800000000000000
-      internalID: -6397164054643920925
+      spriteID: 6fdf06a4de5b00c00800000000000000
+      internalID: 864891159214882294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_6
+      name: piquete_7
       rect:
         serializedVersion: 2
-        x: 13560
-        y: 514
-        width: 120
-        height: 364
+        x: 2865
+        y: 161
+        width: 359
+        height: 712
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5584dca6f98dff00800000000000000
-      internalID: 1152228772231284058
+      spriteID: 216180272ae6dd080800000000000000
+      internalID: -9161044423024830958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_7
+      name: piquete_8
       rect:
         serializedVersion: 2
-        x: 15147
-        y: 1059
-        width: 1299
-        height: 1266
+        x: 3700
+        y: 158
+        width: 459
+        height: 688
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 610b25ba119627140800000000000000
-      internalID: 4715947284420014102
+      spriteID: d08e279d6760c8810800000000000000
+      internalID: 1768795861173856269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_8
+      name: piquete_9
       rect:
         serializedVersion: 2
-        x: 15955
-        y: 629
-        width: 53
-        height: 121
+        x: 4226
+        y: 165
+        width: 376
+        height: 703
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +340,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70332d07e4907a200800000000000000
-      internalID: 191131741691458311
+      spriteID: 203af1975e1301be0800000000000000
+      internalID: -1508651013519727870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_9
+      name: piquete_10
       rect:
         serializedVersion: 2
-        x: 15974
-        y: 412
-        width: 110
-        height: 342
+        x: 4672
+        y: 156
+        width: 359
+        height: 712
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,20 +362,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0cb6e83fe6e8b800800000000000000
-      internalID: 628506063144401935
+      spriteID: a67ec3f09bc181e50800000000000000
+      internalID: 6780200820156458858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_10
+      name: piquete_11
       rect:
         serializedVersion: 2
-        x: 18355
-        y: 629
-        width: 53
-        height: 121
+        x: 5478
+        y: 169
+        width: 402
+        height: 704
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,20 +384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b315e190ef3b42f0800000000000000
-      internalID: -987625459524758607
+      spriteID: feda127c73ee2ec20800000000000000
+      internalID: 3234409405736922607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_11
+      name: piquete_12
       rect:
         serializedVersion: 2
-        x: 18374
-        y: 412
-        width: 110
-        height: 342
+        x: 5958
+        y: 177
+        width: 529
+        height: 669
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,140 +406,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbcecddc8c35845f0800000000000000
-      internalID: -772275214181667651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_12
-      rect:
-        serializedVersion: 2
-        x: 20705
-        y: 82
-        width: 366
-        height: 234
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54962ec7552470230800000000000000
-      internalID: 3604922961668237637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_13
-      rect:
-        serializedVersion: 2
-        x: 23143
-        y: 247
-        width: 29
-        height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4cb62ad1550f65d0800000000000000
-      internalID: -3067226972105556916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_14
-      rect:
-        serializedVersion: 2
-        x: 23180
-        y: 247
-        width: 52
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86ff54fa54ad6c440800000000000000
-      internalID: 4955888432796008296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_15
-      rect:
-        serializedVersion: 2
-        x: 23235
-        y: 287
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15671c604bc633550800000000000000
-      internalID: 6139370237499373137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_16
-      rect:
-        serializedVersion: 2
-        x: 23248
-        y: 256
-        width: 53
-        height: 119
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe36a3e8ef4409bc0800000000000000
-      internalID: -3778444227265272849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_17
-      rect:
-        serializedVersion: 2
-        x: 23105
-        y: 82
-        width: 366
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: afa3609855026a8a0800000000000000
-      internalID: -6294307877460493574
+      spriteID: 0ba34e8eb442ae980800000000000000
+      internalID: -8508948637514712400
       vertices: []
       indices: 
       edges: []
@@ -563,7 +416,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 136d56e69e219fb48a601e8b516a9e44
+    spriteID: e518f7ef163d3cd4f8656f1f16aed25e
     internalID: 0
     vertices: []
     indices: 
@@ -573,24 +426,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      paloma_0: -7717741755746023646
-      paloma_1: 2976194024364115550
-      paloma_10: -987625459524758607
-      paloma_11: -772275214181667651
-      paloma_12: 3604922961668237637
-      paloma_13: -3067226972105556916
-      paloma_14: 4955888432796008296
-      paloma_15: 6139370237499373137
-      paloma_16: -3778444227265272849
-      paloma_17: -6294307877460493574
-      paloma_2: 3728860463203901982
-      paloma_3: -6454773063141063778
-      paloma_4: -2005976705576376939
-      paloma_5: -6397164054643920925
-      paloma_6: 1152228772231284058
-      paloma_7: 4715947284420014102
-      paloma_8: 191131741691458311
-      paloma_9: 628506063144401935
+      piquete_0: -3056890102410421289
+      piquete_1: -279493423307010870
+      piquete_10: 6780200820156458858
+      piquete_11: 3234409405736922607
+      piquete_12: -8508948637514712400
+      piquete_2: -7718360119118527154
+      piquete_3: 8238149136852913529
+      piquete_4: -6586828828745918026
+      piquete_5: -7137789756762780071
+      piquete_6: 864891159214882294
+      piquete_7: -9161044423024830958
+      piquete_8: 1768795861173856269
+      piquete_9: -1508651013519727870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

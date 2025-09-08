@@ -44,6 +44,8 @@ public class PalomaVuelo : MonoBehaviour
     void FixedUpdate()
     {
 
+
+
         if (!enZonaAtaque)
         {
             float movimientoX = velocidadX;

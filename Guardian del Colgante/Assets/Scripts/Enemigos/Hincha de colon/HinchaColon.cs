@@ -13,7 +13,7 @@ public class HinchaColon : MonoBehaviour
     public float offsetPosible = 1.0f;
 
     [Header("Daño")]
-    public float danoAEstructura = 1.0f;
+    public int danoAEstructura = 1;
     public int danoAJugador = 15;
 
     public float speed = 5.0f;

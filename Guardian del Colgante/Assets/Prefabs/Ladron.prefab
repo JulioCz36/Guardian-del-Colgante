@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2268398075484199933}
   - component: {fileID: 3635587073292112226}
   - component: {fileID: 2118487429181302005}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: BarraSalud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,8 +115,8 @@ GameObject:
   - component: {fileID: 9005287744673623847}
   - component: {fileID: 6592798056378192364}
   - component: {fileID: 5127700044167464400}
-  m_Layer: 7
-  m_Name: Canvas
+  m_Layer: 10
+  m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 9020546394215019707}
   - component: {fileID: 2013661588326172807}
   - component: {fileID: 3492536233789454762}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 5029860064327883880}
   - component: {fileID: 4216089906022150967}
   - component: {fileID: 3265832751477347531}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 6385646212774538142}
   - component: {fileID: 82023402994439385}
   - component: {fileID: 8907856673123842728}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Ladron
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -461,7 +461,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1605193307
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.48427665, g: 0.33850172, b: 0.1994976, a: 1}
@@ -553,7 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6847991750613612629}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

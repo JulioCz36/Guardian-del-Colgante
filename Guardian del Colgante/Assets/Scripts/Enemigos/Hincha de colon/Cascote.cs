@@ -8,7 +8,7 @@ public class Cascote : MonoBehaviour
     private Vector2 gravity;
     private float time_prime;
 
-    private float danoAEstructura;
+    private int danoAEstructura;
     private int danoAJugador;
 
     private float time = 0.0f;
@@ -16,7 +16,7 @@ public class Cascote : MonoBehaviour
     private float timerCascoteVivo = 0.0f;
     private Vector2 v0;
 
-    public void Init(Vector2 p1, Vector2 p2, float gravity, float time_prime, float danoAEstructura, int danoAJugador) {
+    public void Init(Vector2 p1, Vector2 p2, float gravity, float time_prime, int danoAEstructura, int danoAJugador) {
         this.p1 = p1;
         this.p2 = p2;
         this.gravity = new Vector2(0f, -gravity);

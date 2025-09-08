@@ -3,7 +3,7 @@ using UnityEngine;
 public class ProyectilPaloma : MonoBehaviour
 {
     [Header("Configuracion")]
-    [SerializeField] private float dano = 1f;
+    [SerializeField] private int dano = 1;
 
     void OnTriggerEnter2D(Collider2D collision)
     {

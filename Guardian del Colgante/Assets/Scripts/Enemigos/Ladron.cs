@@ -5,7 +5,7 @@ public class Ladron : MonoBehaviour
     
     // El dano es el que le va a infligir al material objetivo
     protected Rigidbody2D rb;
-    public float danoAEstructura = 1.0f;
+    public int danoAEstructura = 1;
     public int danoAJugador = 15;
     public float speed = 5.0f;
     public float tiempoFreno = 1f;

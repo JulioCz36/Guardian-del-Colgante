@@ -2,31 +2,54 @@ using UnityEngine;
 
 public class MaterialObjetivo : MonoBehaviour
 {
-    public float vidaMax = 5.0f;
-    public float vidaActual = 0.0f;
-    void Start()
+    public int progresoMax = 100;
+    public int progresoActual = 0;
+    [SerializeField] private BarraProgreso barraProgreso;
+
+    [Header("Configuración")]
+    public int progresoPorSegundo = 5;
+    private float contador = 0f;
+
+    private void OnEnable()
     {
-        vidaActual = vidaMax;
+
+        barraProgreso.establecerMaximoProgreso(progresoMax);
+
     }
 
-    public void InfligirDano(float dano)
+    void Update()
     {
-        vidaActual -= dano;
-        Debug.Log("Material recibió daño. Vida: " + vidaActual);
-
-        if (vidaActual <= 0.0f)
+        contador += Time.deltaTime;
+        if (contador >= 1f) // cada 1 segundo
         {
+            progresoActual += progresoPorSegundo;
+            if (progresoActual > progresoMax)
+                progresoActual = progresoMax;
+
+            barraProgreso.establecerProgreso(progresoActual);
+
+            contador = 0f; // reiniciamos el contador
+        }
+    }
+    public void InfligirDano(int dano)
+    {
+        progresoActual -= dano;
+        barraProgreso.establecerProgreso(progresoActual);
+
+        if (progresoActual <= 0.0f){
+            progresoActual = 0;
             Muerte();
         }
     }
 
-    public void RobarMaterial(float cantidad)
+    public void RobarMaterial(int cantidad)
     {
-        vidaActual -= cantidad;
-        Debug.Log("Enemigo robó materiales. Vida: " + vidaActual);
+        progresoActual -= cantidad;
+        barraProgreso.establecerProgreso(progresoActual);
 
-        if (vidaActual <= 0.0f)
+        if (progresoActual <= 0.0f)
         {
+            progresoActual = 0;
             Muerte();
         }
     }

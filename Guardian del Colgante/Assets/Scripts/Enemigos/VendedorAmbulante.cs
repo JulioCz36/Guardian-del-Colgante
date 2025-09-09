@@ -3,53 +3,85 @@ using UnityEngine;
 public class VendedorAmbulante : HinchaColon
 {
 
+    [Header("Configuración")]
+    public float distanciaMinima = 7.0f;
+
+    private GameObject player;
+
     void Start()
     {
+        estado = "mover";
         rb = GetComponent<Rigidbody2D>();
-        materialObjetivo = GameObject.FindGameObjectWithTag("MaterialObjetivo");
-        //player = GameObject.FindGameObjectWithTag("Player");
-        ActualizarDireccion();
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (ataque != null)
+            ataque.SetObjetivo(player);
+
+        timerCascote = 0f;
     }
+
     void Update()
     {
-        // Máquina de estados.
-        if (estado == "ataque")
-        {
-            if ( true )///timerCascote >= cadenciaDeTiroDeCascotes)
+        if (player == null) return;
+
+        float distancia = Vector2.Distance(player.transform.position, transform.position);
+
+        if (estado == "mover") {
+            if (distancia > distanciaMinima)
             {
-                //GameObject casc = Instantiate(cascotePrefab);
-                //Cascote cascScript = casc.GetComponent<Cascote>();
-                //Vector2 offset = new Vector2(Random.Range(-offsetPosible, offsetPosible), Random.Range(-offsetPosible, offsetPosible));
-                //Vector2 posicionFinal = new Vector2(this.player.transform.position.x, this.player.transform.position.y) + offset;
-
-
-                //if (Vector2.Distance(player.transform.position, this.transform.position) > distanciaHastaEmpezarAAtacar)
-                //{
-                    //ActualizarDireccion();
-                  //  estado = "busqueda";
-                //}
+                estado = "mover";
+                direccion = (player.transform.position - transform.position).normalized;
+                rb.linearVelocity = direccion * speed;
             }
-
-           // timerCascote += Time.deltaTime;
+            else if (distancia < distanciaMinima - 1f)
+            {
+                estado = "mover";
+                direccion = (transform.position - player.transform.position).normalized;
+                rb.linearVelocity = direccion * (speed * 0.5f);
+            }
+        
+            else {
+                rb.linearVelocity = Vector2.zero;
+                estado = "ataque";
+    
+                if (ataque != null)
+                {
+                    ataque.Lanzar();
+                }
+                timerCascote = 0f;
+            } 
+        }
+        else if (estado == "ataque")
+        {
             rb.linearVelocity *= 0.98f;
 
+            timerCascote += Time.deltaTime;
+            if (timerCascote >= cadenciaDeTiroDeCascotes)
+            {
+                if (ataque != null)
+                    ataque.Lanzar();
+                timerCascote = 0f;
+            }
+
+            if (distancia > distanciaMinima || distancia < distanciaMinima - 1f)
+            {
+                estado = "mover";
+            }
         }
 
-        if (estado == "busqueda")
-        {
-            //busquedaTimer += Time.deltaTime;
-            ActualizarDireccion();
-            rb.linearVelocity = direccion * speed;
-           // if (Vector2.Distance(player.transform.position, this.transform.position) <= distanciaHastaEmpezarAAtacar)
-            //{
-              //  estado = "ataque";
-            //}
-        }
 
-
+        Vector2 direccionMirar = (player.transform.position - transform.position).normalized;
+        if (direccionMirar.x > 0)
+            transform.localScale = new Vector3(-1, 1, 1);
+        else if (direccionMirar.x < 0)
+            transform.localScale = new Vector3(1, 1, 1);
     }
-    protected new void ActualizarDireccion()
+
+    
+    void OnCollisionEnter2D(Collision2D collision)
     {
-       // direccion = (player.transform.position - transform.position).normalized;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Jugador>().ModificarVida(-danoAJugador);
+        }
     }
 }

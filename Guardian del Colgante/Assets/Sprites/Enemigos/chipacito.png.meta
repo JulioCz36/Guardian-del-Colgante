@@ -1,46 +1,52 @@
 fileFormatVersion: 2
-guid: 8d53862d8e0154046b066b9c23d736ad
+guid: 7b3b8620abe59b34fa56b0e5d62416df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3056890102410421289
-    second: piquete_0
+      213: -1940688986764760565
+    second: chipacito_0
   - first:
-      213: -279493423307010870
-    second: piquete_1
+      213: -5876552177449453110
+    second: chipacito_1
   - first:
-      213: -7718360119118527154
-    second: piquete_2
+      213: -4230516455123001948
+    second: chipacito_2
   - first:
-      213: 8238149136852913529
-    second: piquete_3
+      213: 7806867079840885072
+    second: chipacito_3
   - first:
-      213: -6586828828745918026
-    second: piquete_4
+      213: 1612158703607932088
+    second: chipacito_4
   - first:
-      213: -7137789756762780071
-    second: piquete_5
+      213: 8509344321017566907
+    second: chipacito_5
   - first:
-      213: 864891159214882294
-    second: piquete_6
+      213: 8877880579493052149
+    second: chipacito_6
   - first:
-      213: -9161044423024830958
-    second: piquete_7
+      213: -221541307893828865
+    second: chipacito_7
   - first:
-      213: 1768795861173856269
-    second: piquete_8
+      213: -6315184192726511376
+    second: chipacito_8
   - first:
-      213: -1508651013519727870
-    second: piquete_9
+      213: -7145497173512839954
+    second: chipacito_9
   - first:
-      213: 6780200820156458858
-    second: piquete_10
+      213: 8867151989841818000
+    second: chipacito_10
   - first:
-      213: 3234409405736922607
-    second: piquete_11
+      213: -4374722500129987135
+    second: chipacito_11
   - first:
-      213: -8508948637514712400
-    second: piquete_12
+      213: -4701979877471335428
+    second: chipacito_12
+  - first:
+      213: -4510046271883307715
+    second: chipacito_13
+  - first:
+      213: -3883530074685212546
+    second: chipacito_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,10 +114,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,265 +155,331 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piquete_1
+      name: chipacito_0
       rect:
         serializedVersion: 2
-        x: 466
-        y: 168
-        width: 422
-        height: 764
+        x: 877
+        y: 216
+        width: 314
+        height: 531
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acc4aba563a0f1cf0800000000000000
-      internalID: -279493423307010870
+      spriteID: b0aaf5416a94115e0800000000000000
+      internalID: -1940688986764760565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_2
+      name: chipacito_1
       rect:
         serializedVersion: 2
-        x: 974
-        y: 168
-        width: 422
-        height: 764
+        x: 2850
+        y: 228
+        width: 278
+        height: 518
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4506638d50e2e490800000000000000
-      internalID: -7718360119118527154
+      spriteID: ac9b31f0eea427ea0800000000000000
+      internalID: -5876552177449453110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_3
+      name: chipacito_2
       rect:
         serializedVersion: 2
-        x: 1526
-        y: 161
-        width: 358
-        height: 779
+        x: 4713
+        y: 238
+        width: 328
+        height: 493
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97d0fcc0ef8c35270800000000000000
-      internalID: 8238149136852913529
+      spriteID: 4add2f3c2bf2a45c0800000000000000
+      internalID: -4230516455123001948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_4
+      name: chipacito_3
       rect:
         serializedVersion: 2
-        x: 5086
-        y: 165
-        width: 344
-        height: 731
+        x: 6685
+        y: 212
+        width: 254
+        height: 530
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b91c4a2412e694a0800000000000000
-      internalID: -6586828828745918026
+      spriteID: 0596b9e1f30975c60800000000000000
+      internalID: 7806867079840885072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_5
+      name: chipacito_4
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 161
-        width: 359
-        height: 729
+        x: 8569
+        y: 226
+        width: 307
+        height: 514
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95e8bbaa80a71fc90800000000000000
-      internalID: -7137789756762780071
+      spriteID: 8b4ea12acc98f5610800000000000000
+      internalID: 1612158703607932088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_6
+      name: chipacito_5
       rect:
         serializedVersion: 2
-        x: 2390
-        y: 161
-        width: 377
-        height: 689
+        x: 10456
+        y: 246
+        width: 349
+        height: 495
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fdf06a4de5b00c00800000000000000
-      internalID: 864891159214882294
+      spriteID: bb65db55393471670800000000000000
+      internalID: 8509344321017566907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_7
+      name: chipacito_6
       rect:
         serializedVersion: 2
-        x: 2865
-        y: 161
-        width: 359
-        height: 712
+        x: 12376
+        y: 243
+        width: 333
+        height: 499
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 216180272ae6dd080800000000000000
-      internalID: -9161044423024830958
+      spriteID: 5feb50b9951943b70800000000000000
+      internalID: 8877880579493052149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_8
+      name: chipacito_7
       rect:
         serializedVersion: 2
-        x: 3700
-        y: 158
-        width: 459
-        height: 688
+        x: 14314
+        y: 234
+        width: 342
+        height: 506
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d08e279d6760c8810800000000000000
-      internalID: 1768795861173856269
+      spriteID: ff2b9efaa5dececf0800000000000000
+      internalID: -221541307893828865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_9
+      name: chipacito_8
       rect:
         serializedVersion: 2
-        x: 4226
-        y: 165
-        width: 376
-        height: 703
+        x: 16237
+        y: 216
+        width: 314
+        height: 531
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 203af1975e1301be0800000000000000
-      internalID: -1508651013519727870
+      spriteID: 0f0df5d9f65fb58a0800000000000000
+      internalID: -6315184192726511376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_10
+      name: chipacito_9
       rect:
         serializedVersion: 2
-        x: 4672
-        y: 156
-        width: 359
-        height: 712
+        x: 18200
+        y: 221
+        width: 248
+        height: 519
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a67ec3f09bc181e50800000000000000
-      internalID: 6780200820156458858
+      spriteID: eec953ddd2816dc90800000000000000
+      internalID: -7145497173512839954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_11
+      name: chipacito_10
       rect:
         serializedVersion: 2
-        x: 5478
-        y: 169
-        width: 402
-        height: 704
+        x: 20067
+        y: 221
+        width: 345
+        height: 523
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: feda127c73ee2ec20800000000000000
-      internalID: 3234409405736922607
+      spriteID: 0917beb21c37e0b70800000000000000
+      internalID: 8867151989841818000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piquete_12
+      name: chipacito_11
       rect:
         serializedVersion: 2
-        x: 5958
-        y: 177
-        width: 529
-        height: 669
+        x: 21986
+        y: 221
+        width: 327
+        height: 525
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ba34e8eb442ae980800000000000000
-      internalID: -8508948637514712400
+      spriteID: 1c5e7dc701dd943c0800000000000000
+      internalID: -4374722500129987135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chipacito_12
+      rect:
+        serializedVersion: 2
+        x: 23878
+        y: 221
+        width: 355
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb494ea6363fbeb0800000000000000
+      internalID: -4701979877471335428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chipacito_13
+      rect:
+        serializedVersion: 2
+        x: 25700
+        y: 588
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3512db9fc81961c0800000000000000
+      internalID: -4510046271883307715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chipacito_14
+      rect:
+        serializedVersion: 2
+        x: 25780
+        y: 221
+        width: 373
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7877df09fdea1ac0800000000000000
+      internalID: -3883530074685212546
       vertices: []
       indices: 
       edges: []
@@ -416,7 +488,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91af66a25eb841248b5a197404219d93
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -426,19 +498,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      piquete_0: -3056890102410421289
-      piquete_1: -279493423307010870
-      piquete_10: 6780200820156458858
-      piquete_11: 3234409405736922607
-      piquete_12: -8508948637514712400
-      piquete_2: -7718360119118527154
-      piquete_3: 8238149136852913529
-      piquete_4: -6586828828745918026
-      piquete_5: -7137789756762780071
-      piquete_6: 864891159214882294
-      piquete_7: -9161044423024830958
-      piquete_8: 1768795861173856269
-      piquete_9: -1508651013519727870
+      chipacito_0: -1940688986764760565
+      chipacito_1: -5876552177449453110
+      chipacito_10: 8867151989841818000
+      chipacito_11: -4374722500129987135
+      chipacito_12: -4701979877471335428
+      chipacito_13: -4510046271883307715
+      chipacito_14: -3883530074685212546
+      chipacito_2: -4230516455123001948
+      chipacito_3: 7806867079840885072
+      chipacito_4: 1612158703607932088
+      chipacito_5: 8509344321017566907
+      chipacito_6: 8877880579493052149
+      chipacito_7: -221541307893828865
+      chipacito_8: -6315184192726511376
+      chipacito_9: -7145497173512839954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -18,7 +18,7 @@ public class HinchaColon : MonoBehaviour
     protected string estado = "busqueda";
     protected Vector2 direccion = Vector2.zero;
 
-    private float timerCascote = 0f;
+    protected float timerCascote = 0f;
     public HinchaColonAtaque ataque;
 
     void Start()
@@ -68,5 +68,13 @@ public class HinchaColon : MonoBehaviour
     protected void ActualizarDireccion()
     {
         direccion = (materialObjetivo.transform.position - transform.position).normalized;
+        if (direccion.x > 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1); 
+        }
+        else if (direccion.x < 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1); 
+        }
     }
 }

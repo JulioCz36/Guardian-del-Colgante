@@ -8,7 +8,7 @@ public class ProyectilPaloma : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("MaterialObjetivo"))
+        if (collision.gameObject.CompareTag("HurtboxMaterialObjetivo"))
         {
             collision.SendMessageUpwards("InfligirDano", dano);
             Destroy(gameObject);

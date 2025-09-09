@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: c3fbdf33eb5f265438f2bb908823d3dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5671315474543140887
+    second: cole_0
+  - first:
+      213: 7790559793483568023
+    second: cole_1
+  - first:
+      213: 7209857085489144024
+    second: cole_2
+  - first:
+      213: 3760350929582349783
+    second: cole_3
+  - first:
+      213: 8258457719544480746
+    second: cole_4
+  - first:
+      213: -8327741534970368371
+    second: cole_5
+  - first:
+      213: -8379635182980762081
+    second: cole_6
+  - first:
+      213: 5714971816048988780
+    second: cole_7
+  - first:
+      213: -368887018630539169
+    second: cole_8
+  - first:
+      213: 6951932926070874128
+    second: cole_9
+  - first:
+      213: -1216556161950044563
+    second: cole_10
+  - first:
+      213: -3323378413315225212
+    second: cole_11
+  - first:
+      213: -8221630775589556881
+    second: cole_12
+  - first:
+      213: -4103949782733751748
+    second: cole_13
+  - first:
+      213: 4625053029659450581
+    second: cole_14
+  - first:
+      213: -3508282360185162275
+    second: cole_15
+  - first:
+      213: 6364984512762536634
+    second: cole_16
+  - first:
+      213: 362745382875311349
+    second: cole_17
+  - first:
+      213: -5660405347218450894
+    second: cole_18
+  - first:
+      213: 3762301455886316380
+    second: cole_19
+  - first:
+      213: 4723550088948217424
+    second: cole_20
+  - first:
+      213: -2003948713637181438
+    second: cole_21
+  - first:
+      213: -6375575365570419939
+    second: cole_22
+  - first:
+      213: -574288013713501818
+    second: cole_23
+  - first:
+      213: 5839310117921315502
+    second: cole_24
+  - first:
+      213: 1440055153435575248
+    second: cole_25
+  - first:
+      213: 6552857923778066327
+    second: cole_26
+  - first:
+      213: 4131244435521913113
+    second: cole_27
+  - first:
+      213: -7655210431436255263
+    second: cole_28
+  - first:
+      213: -2245470644442123739
+    second: cole_29
+  - first:
+      213: -8085596098862981303
+    second: cole_30
+  - first:
+      213: -8532542217071923801
+    second: cole_31
+  - first:
+      213: -1266694130855597992
+    second: cole_32
+  - first:
+      213: 3259958754371606204
+    second: cole_33
+  - first:
+      213: 5739662526645586444
+    second: cole_34
+  - first:
+      213: -4564959886064730054
+    second: cole_35
+  - first:
+      213: -2616895807930666151
+    second: cole_36
+  - first:
+      213: -2631941346292035387
+    second: cole_37
+  - first:
+      213: -450211384123630101
+    second: cole_38
+  - first:
+      213: 370400847121331552
+    second: cole_39
+  - first:
+      213: 4486591475553511435
+    second: cole_40
+  - first:
+      213: -4872987719822481568
+    second: cole_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cole_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 1933
+        height: 1183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79357042bd0ad1c60800000000000000
+      internalID: 7790559793483568023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_3
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 78
+        width: 2106
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddd09c4f337f2430800000000000000
+      internalID: 3760350929582349783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_4
+      rect:
+        serializedVersion: 2
+        x: 4052
+        y: 56
+        width: 2308
+        height: 1189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3080e6a8feb9270800000000000000
+      internalID: 8258457719544480746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_5
+      rect:
+        serializedVersion: 2
+        x: 6370
+        y: 92
+        width: 2003
+        height: 1148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e23da323bed6c80800000000000000
+      internalID: -8327741534970368371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_6
+      rect:
+        serializedVersion: 2
+        x: 8378
+        y: 55
+        width: 2470
+        height: 1189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16f013c23e85bb80800000000000000
+      internalID: -8379635182980762081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_8
+      rect:
+        serializedVersion: 2
+        x: 10850
+        y: 147
+        width: 2422
+        height: 1098
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f581644063371eaf0800000000000000
+      internalID: -368887018630539169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_9
+      rect:
+        serializedVersion: 2
+        x: 13286
+        y: 9
+        width: 2421
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010ebc0d92a3a7060800000000000000
+      internalID: 6951932926070874128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_10
+      rect:
+        serializedVersion: 2
+        x: 15736
+        y: 0
+        width: 1844
+        height: 1240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ea7a5cd9ced1fe0800000000000000
+      internalID: -1216556161950044563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_11
+      rect:
+        serializedVersion: 2
+        x: 17583
+        y: 81
+        width: 1724
+        height: 1163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489052ce0fcf0e1d0800000000000000
+      internalID: -3323378413315225212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cole_12
+      rect:
+        serializedVersion: 2
+        x: 19315
+        y: 64
+        width: 1724
+        height: 1172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6da092ae56e6ed80800000000000000
+      internalID: -8221630775589556881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bcc44b91d318f994fa05023cbd9a543c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cole_0: -5671315474543140887
+      cole_1: 7790559793483568023
+      cole_10: -1216556161950044563
+      cole_11: -3323378413315225212
+      cole_12: -8221630775589556881
+      cole_13: -4103949782733751748
+      cole_14: 4625053029659450581
+      cole_15: -3508282360185162275
+      cole_16: 6364984512762536634
+      cole_17: 362745382875311349
+      cole_18: -5660405347218450894
+      cole_19: 3762301455886316380
+      cole_2: 7209857085489144024
+      cole_20: 4723550088948217424
+      cole_21: -2003948713637181438
+      cole_22: -6375575365570419939
+      cole_23: -574288013713501818
+      cole_24: 5839310117921315502
+      cole_25: 1440055153435575248
+      cole_26: 6552857923778066327
+      cole_27: 4131244435521913113
+      cole_28: -7655210431436255263
+      cole_29: -2245470644442123739
+      cole_3: 3760350929582349783
+      cole_30: -8085596098862981303
+      cole_31: -8532542217071923801
+      cole_32: -1266694130855597992
+      cole_33: 3259958754371606204
+      cole_34: 5739662526645586444
+      cole_35: -4564959886064730054
+      cole_36: -2616895807930666151
+      cole_37: -2631941346292035387
+      cole_38: -450211384123630101
+      cole_39: 370400847121331552
+      cole_4: 8258457719544480746
+      cole_40: 4486591475553511435
+      cole_41: -4872987719822481568
+      cole_5: -8327741534970368371
+      cole_6: -8379635182980762081
+      cole_7: 5714971816048988780
+      cole_8: -368887018630539169
+      cole_9: 6951932926070874128
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

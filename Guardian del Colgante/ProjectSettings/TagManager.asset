@@ -8,6 +8,7 @@ TagManager:
   - MaterialObjetivo
   - HurtboxJugador
   - ZonaPaloma
+  - HurtboxMaterialObjetivo
   layers:
   - Default
   - TransparentFX

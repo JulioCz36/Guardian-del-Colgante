@@ -20,7 +20,7 @@ public class Cascote : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        if (collision.gameObject.CompareTag("MaterialObjetivo"))
+        if (collision.gameObject.CompareTag("HurtboxMaterialObjetivo"))
         {
             collision.SendMessageUpwards("InfligirDano", danoAEstructura);
             Destroy(gameObject);

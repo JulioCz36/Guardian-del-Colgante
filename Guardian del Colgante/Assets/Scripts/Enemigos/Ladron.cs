@@ -3,108 +3,163 @@ using UnityEngine;
 public class Ladron : MonoBehaviour
 {
     
-    // El dano es el que le va a infligir al material objetivo
-    protected Rigidbody2D rb;
-    public int danoAEstructura = 1;
-    public int danoAJugador = 15;
-    public float speed = 5.0f;
-    public float tiempoFreno = 1f;
-    public float tiempoBusqueda = 1f;
-    public float velocidadDeEscape = 7.0f;
     
+    protected Rigidbody2D rb;
+    public Animator animator;
 
-    protected GameObject materialObjetivo;
-    protected GameObject player;
+    [Header("Daño")]
+    public int danoAEstructura = 5;
+    public int danoAJugador = 15;
 
-    protected string estado = "busqueda";
-    protected float dist = 0.0f;
-    protected float rAngle = 0.0f;
-    protected float frenadoTimer = 0.0f;
-    protected float busquedaTimer = 0.0f;
+    [Header("Movimiento")]
+    public float speed = 3.0f;
+    public float tiempoDeCaminata = 2.0f; 
+    public float tiempoDePausa = 1.0f;
 
-    protected Vector2 direccion = Vector2.zero;
+    [Header("Zigzag")]
+    public float anguloZigzag = 15f;
+    private int direccionZigzag = 1;
+
+    [Header("Robo")]
+    public float tiempoRobando = 3f; 
+    public int danoPorSegundo = 5;
+
+    [Header("Loot")]
+    public GameObject objetoRobadoPrefab;
+    public GameObject objetoRobadoTransform;
+    public float tiempoMostrandoObjeto = 1f; 
+
+    private float contadorMostrarObjeto = 0f;
+    private GameObject objetoInstanciado;
+
+    private float contadorRobo = 0f;
+    private float tiempoRobandoTotal = 0f;
+
+
+    private GameObject materialObjetivo;
+    private Vector2 direccion;
+
+    private string estado = "caminar";
+    private float timer = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         materialObjetivo = GameObject.FindGameObjectWithTag("MaterialObjetivo");
-        player = GameObject.FindGameObjectWithTag("Player");
-
         ActualizarDireccion();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Máquina de estados.
-        if (estado == "frenado") { 
-            frenadoTimer += Time.deltaTime;
+        if (materialObjetivo == null) return;
 
-            rb.linearVelocity *= 0.99f;
-            if (frenadoTimer >= tiempoFreno) {
-                ActualizarDireccion();
-                frenadoTimer = 0.0f;
-                estado = "busqueda";
-            }
-        }
+        switch (estado)
+        {
+            case "caminar":
+                timer += Time.deltaTime;
+                rb.linearVelocity = direccion * speed;
+                animator.SetBool("caminando", true);
 
-        if (estado == "busqueda") {
-            busquedaTimer += Time.deltaTime;
-            rb.linearVelocity = rb.linearVelocity + (direccion * speed * Time.deltaTime);
-            if (busquedaTimer >= tiempoBusqueda) {
-                busquedaTimer = 0.0f;
-                estado = "frenado";
-            }
-        }
+                if (timer >= tiempoDeCaminata)
+                {
+                    estado = "parado";
+                    rb.linearVelocity = Vector2.zero;
+                    timer = 0f;
+                }
+                break;
 
-        if (estado == "escape") {
-            rb.linearVelocity = Vector2.right * velocidadDeEscape;
+            case "parado":
+                timer += Time.deltaTime;
+                rb.linearVelocity = Vector2.zero;
+                animator.SetBool("caminando", false);
+                if (timer >= tiempoDePausa)
+                {
+                    estado = "caminar";
+                    timer = 0f;
+
+                    direccionZigzag *= -1;
+                    ActualizarDireccion();
+                }
+                break;
+
+            case "robando":
+                rb.linearVelocity = Vector2.zero;
+                animator.SetBool("robando", true);
+
+                contadorRobo += Time.deltaTime;
+                tiempoRobandoTotal += Time.deltaTime;
+
+                if (contadorRobo >= 1f)
+                {
+                    materialObjetivo.GetComponent<MaterialObjetivo>()
+                                    .RobarMaterial(danoPorSegundo);
+                    contadorRobo = 0f;
+                }
+
+                if (tiempoRobandoTotal >= tiempoRobando)
+                {
+                    estado = "encontro";
+                    animator.SetBool("robando", false);
+
+                    // mostrar objeto robado
+                    if (objetoRobadoPrefab != null && objetoRobadoTransform != null)
+                    {
+                        objetoInstanciado = Instantiate(objetoRobadoPrefab,objetoRobadoTransform.transform.position,Quaternion.identity,objetoRobadoTransform.transform);
+                        objetoInstanciado.transform.localPosition = Vector3.zero;
+                    }
+
+                    contadorMostrarObjeto = 0f;
+                    rb.linearVelocity = Vector2.zero;
+                }
+                break;
+
+            case "encontro":
+                contadorMostrarObjeto += Time.deltaTime;
+
+                if (contadorMostrarObjeto >= tiempoMostrandoObjeto)
+                {
+
+                    estado = "escapando";
+                    animator.SetBool("escapando", true);
+
+                    Vector2 dirEscape = (transform.position - materialObjetivo.transform.position).normalized;
+                    rb.linearVelocity = dirEscape * speed;
+
+                    if (dirEscape.x > 0)
+                        transform.localScale = new Vector3(-1, 1, 1);
+                    else
+                        transform.localScale = new Vector3(1, 1, 1);
+                }
+                break;
         }
 
     }
+    private void ActualizarDireccion()
+    {
+        Vector2 baseDir = (materialObjetivo.transform.position - transform.position).normalized;
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log(collision.gameObject.tag);
-        if (collision.gameObject.CompareTag("MaterialObjetivoPadre")) {
-            // Sinceramente no se si es la mejor manera de resolver esto.
+        float rad = anguloZigzag * Mathf.Deg2Rad * direccionZigzag;
 
-            // Básicamente agarro el script MaterialObjetivo del MaterialObjetivo y ejecuto la función InfligirDano desde acá.
-            collision.gameObject.GetComponent<MaterialObjetivo>().InfligirDano(this.danoAEstructura);
-            if (materialObjetivo.transform.position.x - transform.position.x > 0) {
-                velocidadDeEscape *= -1;
-            }
-            this.estado = "escape";
-        }
-        if (collision.gameObject.CompareTag("Player")) {
-            Debug.Log("GOLPEANDO A JUGADOR!");
-            collision.gameObject.GetComponent<Jugador>().ModificarVida(-this.danoAJugador);
-        }
-    }
-    // Boludeces para que apunte para un lado mas o menos aleatorio.
-    protected float sigmoid(float x)
-    {
-        float factor = 15.0f; // Para retocar.
-        return 1 / (1 + Mathf.Exp(-x + factor));
-    }
-    protected float randomAngle(float distance)
-    {
-        float maxAngle = (Mathf.PI / 4);
-        //Debug.Log("Sigmoide de la distancia: " + sigmoid(distance));
-        return sigmoid(distance) * Random.Range(-maxAngle, maxAngle);
+
+        float cos = Mathf.Cos(rad);
+        float sin = Mathf.Sin(rad);
+        direccion = new Vector2(
+            cos * baseDir.x - sin * baseDir.y,
+            sin * baseDir.x + cos * baseDir.y
+        ).normalized;
+
+
+        if (baseDir.x > 0)
+            transform.localScale = new Vector3(-1, 1, 1);
+        else
+            transform.localScale = new Vector3(1, 1, 1);
     }
 
-    protected Vector2 rotatedVector(Vector2 v, float angle)
+    public void EmpezarRobo()
     {
-        float c = Mathf.Cos(angle);
-        float s = Mathf.Sin(angle);
-        return new Vector2(c * v.x - s * v.y, s * v.x + c * v.y);
-    }
-
-    protected void ActualizarDireccion()
-    {
-        dist = Vector2.Distance(materialObjetivo.transform.position, transform.position);
-        rAngle = randomAngle(dist);
-        direccion = rotatedVector((materialObjetivo.transform.position - transform.position).normalized, rAngle);
+        rb.linearVelocity = Vector2.zero;
+        estado = "robando";
+        contadorRobo = 0f;
+        tiempoRobandoTotal = 0f;
     }
 }

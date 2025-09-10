@@ -198,6 +198,8 @@ MonoBehaviour:
   vida: 0
   vidaMax: 10
   barraDeSalud: {fileID: 6250748665797192824}
+  animator: {fileID: 1872303554210433905}
+  barraDeVida: {fileID: 6329510001549828826}
 --- !u!70 &2151925061848789701
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -482,6 +484,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40907e2bacd45374ba519080b180af3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6329510001549828826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89130897053114847, guid: 26f45663ca0c88e4f96a61c9c36747d0, type: 3}
+  m_PrefabInstance: {fileID: 6262897240117084933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7285664646185052521 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3742956102603467372, guid: 26f45663ca0c88e4f96a61c9c36747d0, type: 3}

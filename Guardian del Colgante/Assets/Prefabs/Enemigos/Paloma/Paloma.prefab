@@ -504,7 +504,6 @@ MonoBehaviour:
   vidaMax: 10
   barraDeSalud: {fileID: 2118487429181302005}
   animator: {fileID: 1715938297054418681}
-  rb: {fileID: 9064315383471721138}
   barraDeVida: {fileID: 2021993169876757079}
 --- !u!114 &7527121270624029696
 MonoBehaviour:
@@ -639,7 +638,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1605193307
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6397164054643920925, guid: ee684c7fce902274dbbce92c2c52cce2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

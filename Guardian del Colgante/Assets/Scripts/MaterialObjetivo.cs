@@ -11,11 +11,13 @@ public class MaterialObjetivo : MonoBehaviour
     [SerializeField] private BarraProgreso barraProgreso;
     [SerializeField] private MenuCondicion menuGameOver;
     [SerializeField] private MenuCondicion menuYouWin;
+    private Animator animator;
 
     private void OnEnable()
     {
 
         barraProgreso.establecerMaximoProgreso(progresoMax);
+        animator = GetComponent<Animator>();
 
     }
 
@@ -40,20 +42,9 @@ public class MaterialObjetivo : MonoBehaviour
     {
         progresoActual -= dano;
         barraProgreso.establecerProgreso(progresoActual);
+        animator.SetTrigger("dano");
 
         if (progresoActual <= 0.0f){
-            progresoActual = 0;
-            Muerte();
-        }
-    }
-
-    public void RobarMaterial(int cantidad)
-    {
-        progresoActual -= cantidad;
-        barraProgreso.establecerProgreso(progresoActual);
-
-        if (progresoActual <= 0.0f)
-        {
             progresoActual = 0;
             Muerte();
         }

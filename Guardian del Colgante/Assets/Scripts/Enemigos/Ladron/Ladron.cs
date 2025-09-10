@@ -97,7 +97,7 @@ public class Ladron : MonoBehaviour
                 if (contadorRobo >= 1f)
                 {
                     materialObjetivo.GetComponent<MaterialObjetivo>()
-                                    .RobarMaterial(danoPorSegundo);
+                                    .InfligirDano(danoPorSegundo);
                     contadorRobo = 0f;
                 }
 

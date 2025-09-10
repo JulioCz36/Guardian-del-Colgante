@@ -160,7 +160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1605193307
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -7335345776834287784, guid: 2802800026070324abbe43b72ad805e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -311,8 +311,6 @@ MonoBehaviour:
   animator: {fileID: 5967518347388280391}
   velocidadBusqueda: 5
   velocidadMax: 13
-  waveAmplitude: 0.3
-  waveFrequency: 2
   distanciaHastaComenzarAtaque: 13
   duracionRetroceso: 1
   fuerzaRetroceso: 7
@@ -333,6 +331,8 @@ MonoBehaviour:
   vida: 0
   vidaMax: 10
   barraDeSalud: {fileID: 92822206641871961}
+  animator: {fileID: 5967518347388280391}
+  barraDeVida: {fileID: 9064694364394235}
 --- !u!1001 &80110824127640356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -442,6 +442,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26f45663ca0c88e4f96a61c9c36747d0, type: 3}
+--- !u!1 &9064694364394235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89130897053114847, guid: 26f45663ca0c88e4f96a61c9c36747d0, type: 3}
+  m_PrefabInstance: {fileID: 80110824127640356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &92822206641871961 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 24023300973965181, guid: 26f45663ca0c88e4f96a61c9c36747d0, type: 3}

@@ -534,7 +534,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -577,7 +577,10 @@ MonoBehaviour:
   anguloZigzag: 15
   tiempoRobando: 3
   danoPorSegundo: 5
-  objetoRobadoPrefab: {fileID: 5903741318137246497}
+  puntoEscapeIzquierda: {fileID: 7925303413900032760, guid: 0d66f4d709739ca43a2cc12066ef042c, type: 3}
+  puntoEscapeDerecha: {fileID: 233944994165324654, guid: 5e64d5ef5dd863646af1628441ec8085, type: 3}
+  bodyBoxCollider: {fileID: 5464395571225600419}
+  objetoRobadoPrefab: {fileID: 8920857025733053000, guid: c6495dbc5a3ba124c91f7046ce6b25ab, type: 3}
   objetoRobadoTransform: {fileID: 5992929720120392052}
   tiempoMostrandoObjeto: 1
 --- !u!1 &5992929720120392052

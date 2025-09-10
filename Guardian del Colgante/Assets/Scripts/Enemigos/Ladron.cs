@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Ladron : MonoBehaviour
 {
-    
-    
     protected Rigidbody2D rb;
     public Animator animator;
 
@@ -23,6 +21,13 @@ public class Ladron : MonoBehaviour
     [Header("Robo")]
     public float tiempoRobando = 3f; 
     public int danoPorSegundo = 5;
+
+    [Header("Puntos de escape")]
+    public Transform puntoEscapeIzquierda;
+    public Transform puntoEscapeDerecha;
+    public Collider2D bodyBoxCollider;
+
+    private Transform puntoEscapeActual;
 
     [Header("Loot")]
     public GameObject objetoRobadoPrefab;
@@ -120,16 +125,36 @@ public class Ladron : MonoBehaviour
                 {
 
                     estado = "escapando";
-                    animator.SetBool("escapando", true);
-
-                    Vector2 dirEscape = (transform.position - materialObjetivo.transform.position).normalized;
-                    rb.linearVelocity = dirEscape * speed;
-
-                    if (dirEscape.x > 0)
-                        transform.localScale = new Vector3(-1, 1, 1);
-                    else
-                        transform.localScale = new Vector3(1, 1, 1);
+                    puntoEscapeActual = null;
                 }
+                break;
+
+            case "escapando":
+                animator.SetBool("escapando", true);
+                bodyBoxCollider.enabled = false;
+
+                // Elegir el punto de escape según posición
+                if (puntoEscapeActual == null)
+                {
+                    if (transform.position.x < materialObjetivo.transform.position.x)
+                        puntoEscapeActual = puntoEscapeIzquierda;
+                    else
+                        puntoEscapeActual = puntoEscapeDerecha;
+                }
+
+                // Moverse hacia el punto
+                Vector2 direccionEscape = (puntoEscapeActual.position - transform.position).normalized;
+                rb.linearVelocity = direccionEscape * speed;
+
+                // Girar sprite según dirección
+                if (direccionEscape.x > 0)
+                    transform.localScale = new Vector3(-1, 1, 1);
+                else
+                    transform.localScale = new Vector3(1, 1, 1);
+
+                // Destruir al llegar
+                if (Vector2.Distance(transform.position, puntoEscapeActual.position) < 0.1f)
+                    Destroy(gameObject);
                 break;
         }
 

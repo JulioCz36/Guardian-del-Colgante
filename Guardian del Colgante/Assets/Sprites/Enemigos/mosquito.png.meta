@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: 1b64f856efb363948b0a4d2c0d8c3ea0
+guid: 2802800026070324abbe43b72ad805e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1620807113242901973
-    second: disparando_0
+      213: -7335345776834287784
+    second: mosquito_0
   - first:
-      213: 8478500857737233575
-    second: disparando_1
+      213: -8650765351860947655
+    second: mosquito_1
   - first:
-      213: -7914703446700246256
-    second: disparando_2
+      213: 5622358704833041965
+    second: mosquito_2
   - first:
-      213: -4600179022891652990
-    second: disparando_3
+      213: 3635138094270205233
+    second: mosquito_3
   - first:
-      213: 8613749952292217715
-    second: disparando_4
+      213: -6220937528147967263
+    second: mosquito_4
   - first:
-      213: -8675386712252860017
-    second: disparando_5
+      213: 989252168736825547
+    second: mosquito_5
   - first:
-      213: 4221530586042309125
-    second: disparando_6
+      213: 7553513033016359140
+    second: mosquito_6
+  - first:
+      213: 4794859440882528538
+    second: mosquito_7
+  - first:
+      213: -661298153626941133
+    second: mosquito_8
+  - first:
+      213: -3614317433972764127
+    second: mosquito_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -90,10 +99,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,155 +140,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: disparando_0
+      name: mosquito_0
       rect:
         serializedVersion: 2
-        x: 988
-        y: 58
-        width: 1092
-        height: 1566
+        x: 0
+        y: 68
+        width: 470
+        height: 654
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ddf44a6b734e7610800000000000000
-      internalID: 1620807113242901973
+      spriteID: 857612b51ed933a90800000000000000
+      internalID: -7335345776834287784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_1
+      name: mosquito_1
       rect:
         serializedVersion: 2
-        x: 2122
-        y: 1227
-        width: 306
-        height: 148
+        x: 472
+        y: 6
+        width: 657
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a4c54deb9fa9a570800000000000000
-      internalID: 8478500857737233575
+      spriteID: 93532170fbe42f780800000000000000
+      internalID: -8650765351860947655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_2
+      name: mosquito_2
       rect:
         serializedVersion: 2
-        x: 2476
-        y: 57
-        width: 1092
-        height: 1566
+        x: 1145
+        y: 158
+        width: 742
+        height: 561
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01b3fdc2623592290800000000000000
-      internalID: -7914703446700246256
+      spriteID: d2616691471a60e40800000000000000
+      internalID: 5622358704833041965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_3
+      name: mosquito_4
       rect:
         serializedVersion: 2
-        x: 3723
-        y: 40
-        width: 1056
-        height: 1583
+        x: 2395
+        y: 68
+        width: 468
+        height: 654
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 288e65d2d81e820c0800000000000000
-      internalID: -4600179022891652990
+      spriteID: bc0e7de2b978abd00800000000000000
+      internalID: 989252168736825547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_4
+      name: mosquito_5
       rect:
         serializedVersion: 2
-        x: 4965
-        y: 40
-        width: 868
-        height: 1531
+        x: 2862
+        y: 32
+        width: 429
+        height: 688
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3736a6aa1ff2a8770800000000000000
-      internalID: 8613749952292217715
+      spriteID: 4e83933551873d860800000000000000
+      internalID: 7553513033016359140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_5
+      name: mosquito_6
       rect:
         serializedVersion: 2
-        x: 6070
-        y: 58
-        width: 722
-        height: 1481
+        x: 3290
+        y: 44
+        width: 454
+        height: 678
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f893607dfb5da9780800000000000000
-      internalID: -8675386712252860017
+      spriteID: a113bb9d143ca8240800000000000000
+      internalID: 4794859440882528538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_6
+      name: mosquito_7
       rect:
         serializedVersion: 2
-        x: 7103
-        y: 59
-        width: 722
-        height: 1565
+        x: 3742
+        y: 27
+        width: 484
+        height: 695
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50a9f7d83b3e59a30800000000000000
-      internalID: 4221530586042309125
+      spriteID: 339c17e35d892d6f0800000000000000
+      internalID: -661298153626941133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosquito_3
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 155
+        width: 479
+        height: 567
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1225d8a717d57ddc0800000000000000
+      internalID: -3614317433972764127
       vertices: []
       indices: 
       edges: []
@@ -288,7 +319,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ac104bc933ee0c14e953f32cdcac0f4a
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +329,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      disparando_0: 1620807113242901973
-      disparando_1: 8478500857737233575
-      disparando_2: -7914703446700246256
-      disparando_3: -4600179022891652990
-      disparando_4: 8613749952292217715
-      disparando_5: -8675386712252860017
-      disparando_6: 4221530586042309125
+      mosquito_0: -7335345776834287784
+      mosquito_1: -8650765351860947655
+      mosquito_2: 5622358704833041965
+      mosquito_3: -3614317433972764127
+      mosquito_4: 989252168736825547
+      mosquito_5: 7553513033016359140
+      mosquito_6: 4794859440882528538
+      mosquito_7: -661298153626941133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

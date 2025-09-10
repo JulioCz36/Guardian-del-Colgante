@@ -4,7 +4,8 @@ public class movimiento : MonoBehaviour
 {
     [Header("Configuraciones")]
     [SerializeField] float velocidad = 5f;
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] Animator mi_animator;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     private float moverHorizontal;
     private float moverVertical;
@@ -12,14 +13,11 @@ public class movimiento : MonoBehaviour
 
     private Rigidbody2D mi_rb2d;
 
-    private Animator mi_animator;
 
     // Codigo que es ejecutado cuand el objeto se activa en el nivel
     private void OnEnable()
     {
         mi_rb2d = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        mi_animator = GetComponent<Animator>();
     }
 
     // Codigo ejecutado en cada frame del juego

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemigo : MonoBehaviour
@@ -6,6 +7,9 @@ public class Enemigo : MonoBehaviour
     [SerializeField] float vida;
     [SerializeField] float vidaMax = 10f;
     [SerializeField] BarraDeSaludFlotante barraDeSalud;
+
+    [SerializeField] Animator animator;
+    [SerializeField] GameObject barraDeVida;
 
     private void OnEnable()
     {
@@ -19,8 +23,28 @@ public class Enemigo : MonoBehaviour
 
         vida -= cantDano;
         barraDeSalud.actualizarBarraSalud(vida, vidaMax);
-        if (vida <= 0) { 
-            Destroy(gameObject);
+        if (vida <= 0)
+        {
+            Destroy(barraDeVida);
+            StartCoroutine(Morir());
         }
+    }
+
+    private IEnumerator Morir()
+    {
+        animator.SetTrigger("muerto");
+        foreach (var script in GetComponents<MonoBehaviour>())
+        {
+            if (script != this) script.enabled = false;
+        }
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+            col.enabled = false;
+
+        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForSeconds(state.length);
+
+        Destroy(gameObject);
     }
 }

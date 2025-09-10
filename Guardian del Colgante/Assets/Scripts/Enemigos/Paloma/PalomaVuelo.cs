@@ -36,9 +36,9 @@ public class PalomaVuelo : MonoBehaviour
         }
         vieneDesdeIzquierda = zonaPaloma.position.x > transform.position.x;
         if (vieneDesdeIzquierda)
-            transform.localScale = new Vector3(-.15f, .15f, 1); 
+            transform.localScale = new Vector3(-.5f, .15f, 1); 
         else
-            transform.localScale = new Vector3(.15f, .15f, 1);
+            transform.localScale = new Vector3(.5f, .5f, 1);
     }
 
     void FixedUpdate()
@@ -76,9 +76,9 @@ public class PalomaVuelo : MonoBehaviour
             rb.MovePosition(new Vector2(x, y));
 
             if (x < centroVuelo.x)
-                transform.localScale = new Vector3(-.15f, .15f, 1); // derecha
+                transform.localScale = new Vector3(-.5f, .5f, 1); 
             else
-                transform.localScale = new Vector3(.15f, .15f, 1);
+                transform.localScale = new Vector3(.5f, .5f, 1);
         }
     }
 

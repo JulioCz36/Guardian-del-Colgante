@@ -11,8 +11,7 @@ public class disparo : MonoBehaviour
     [SerializeField] private movimiento playerMovimiento;
     [SerializeField] private GameObject pebete;
     [SerializeField] private Transform pebeteTransform;
-
-    private Animator jugadorAnimator;
+    [SerializeField] Animator jugadorAnimator;
     public bool puedeDisparar;
 
     private float timer;
@@ -22,7 +21,6 @@ public class disparo : MonoBehaviour
     private void OnEnable()
     {
         mainCamara = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        jugadorAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     void Update()

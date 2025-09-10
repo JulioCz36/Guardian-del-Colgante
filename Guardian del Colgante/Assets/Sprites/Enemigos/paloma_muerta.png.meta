@@ -1,28 +1,76 @@
 fileFormatVersion: 2
-guid: 1b64f856efb363948b0a4d2c0d8c3ea0
+guid: a02547d53a2bb0d4ab081385b9c8a1a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1620807113242901973
-    second: disparando_0
+      213: -7703400371152542429
+    second: paloma_muerta_0
   - first:
-      213: 8478500857737233575
-    second: disparando_1
+      213: 9042890756404573952
+    second: paloma_muerta_1
   - first:
-      213: -7914703446700246256
-    second: disparando_2
+      213: 2368534449727338926
+    second: paloma_muerta_2
   - first:
-      213: -4600179022891652990
-    second: disparando_3
+      213: 5304450392862975026
+    second: paloma_muerta_3
   - first:
-      213: 8613749952292217715
-    second: disparando_4
+      213: -5636114516207053605
+    second: paloma_muerta_4
   - first:
-      213: -8675386712252860017
-    second: disparando_5
+      213: 2173565273292833829
+    second: paloma_muerta_5
   - first:
-      213: 4221530586042309125
-    second: disparando_6
+      213: 6115340743824716697
+    second: paloma_muerta_6
+  - first:
+      213: -1630347003395690010
+    second: paloma_muerta_7
+  - first:
+      213: -3345541902135739436
+    second: paloma_muerta_8
+  - first:
+      213: -3737673498488645068
+    second: paloma_muerta_9
+  - first:
+      213: -405907747935124955
+    second: paloma_muerta_10
+  - first:
+      213: -1977440032006381840
+    second: paloma_muerta_11
+  - first:
+      213: -7512304948587779189
+    second: paloma_muerta_12
+  - first:
+      213: 1016584953179204982
+    second: paloma_muerta_13
+  - first:
+      213: 6228102765143768617
+    second: paloma_muerta_14
+  - first:
+      213: 6720206775802451539
+    second: paloma_muerta_15
+  - first:
+      213: 5349596253019441216
+    second: paloma_muerta_16
+  - first:
+      213: 8436617092138293124
+    second: paloma_muerta_17
+  - first:
+      213: 5529990005643900189
+    second: paloma_muerta_18
+  - first:
+      213: -5935466140926761172
+    second: paloma_muerta_19
+  - first:
+      213: -8739015911625287298
+    second: paloma_muerta_20
+  - first:
+      213: 3491110584816447867
+    second: paloma_muerta_21
+  - first:
+      213: -8558276951001612661
+    second: paloma_muerta_22
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -90,10 +138,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,155 +179,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: disparando_0
+      name: paloma_muerta_0
       rect:
         serializedVersion: 2
-        x: 988
-        y: 58
-        width: 1092
-        height: 1566
+        x: 0
+        y: 0
+        width: 1874
+        height: 1562
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ddf44a6b734e7610800000000000000
-      internalID: 1620807113242901973
+      spriteID: 32527d24d26081590800000000000000
+      internalID: -7703400371152542429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_1
+      name: paloma_muerta_4
       rect:
         serializedVersion: 2
-        x: 2122
-        y: 1227
-        width: 306
-        height: 148
+        x: 1887
+        y: 318
+        width: 1106
+        height: 1310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a4c54deb9fa9a570800000000000000
-      internalID: 8478500857737233575
+      spriteID: 234674337813d9940800000000000000
+      internalID: 5304450392862975026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_2
+      name: paloma_muerta_2
       rect:
         serializedVersion: 2
-        x: 2476
-        y: 57
-        width: 1092
-        height: 1566
+        x: 3005
+        y: 0
+        width: 1866
+        height: 1625
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01b3fdc2623592290800000000000000
-      internalID: -7914703446700246256
+      spriteID: 993352c810e0ed450800000000000000
+      internalID: 6115340743824716697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disparando_3
+      name: paloma_muerta_5
       rect:
         serializedVersion: 2
-        x: 3723
-        y: 40
-        width: 1056
-        height: 1583
+        x: 4878
+        y: 0
+        width: 1870
+        height: 1623
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 288e65d2d81e820c0800000000000000
-      internalID: -4600179022891652990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: disparando_4
-      rect:
-        serializedVersion: 2
-        x: 4965
-        y: 40
-        width: 868
-        height: 1531
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3736a6aa1ff2a8770800000000000000
-      internalID: 8613749952292217715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: disparando_5
-      rect:
-        serializedVersion: 2
-        x: 6070
-        y: 58
-        width: 722
-        height: 1481
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f893607dfb5da9780800000000000000
-      internalID: -8675386712252860017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: disparando_6
-      rect:
-        serializedVersion: 2
-        x: 7103
-        y: 59
-        width: 722
-        height: 1565
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50a9f7d83b3e59a30800000000000000
-      internalID: 4221530586042309125
+      spriteID: 6e13af1d908df59e0800000000000000
+      internalID: -1630347003395690010
       vertices: []
       indices: 
       edges: []
@@ -288,7 +270,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 037cae01bd8678748a9426f484c79fa2
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +280,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      disparando_0: 1620807113242901973
-      disparando_1: 8478500857737233575
-      disparando_2: -7914703446700246256
-      disparando_3: -4600179022891652990
-      disparando_4: 8613749952292217715
-      disparando_5: -8675386712252860017
-      disparando_6: 4221530586042309125
+      paloma_muerta_0: -7703400371152542429
+      paloma_muerta_1: 9042890756404573952
+      paloma_muerta_10: -405907747935124955
+      paloma_muerta_11: -1977440032006381840
+      paloma_muerta_12: -7512304948587779189
+      paloma_muerta_13: 1016584953179204982
+      paloma_muerta_14: 6228102765143768617
+      paloma_muerta_15: 6720206775802451539
+      paloma_muerta_16: 5349596253019441216
+      paloma_muerta_17: 8436617092138293124
+      paloma_muerta_18: 5529990005643900189
+      paloma_muerta_19: -5935466140926761172
+      paloma_muerta_2: 6115340743824716697
+      paloma_muerta_20: -8739015911625287298
+      paloma_muerta_21: 3491110584816447867
+      paloma_muerta_22: -8558276951001612661
+      paloma_muerta_4: 5304450392862975026
+      paloma_muerta_5: -1630347003395690010
+      paloma_muerta_8: -3345541902135739436
+      paloma_muerta_9: -3737673498488645068
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class MaterialObjetivo : MonoBehaviour
 {
-    public int progresoMax = 100;
-    public int progresoActual = 0;
-    [SerializeField] private BarraProgreso barraProgreso;
 
     [Header("Configuración")]
     public int progresoPorSegundo = 5;
     private float contador = 0f;
+    public int progresoMax = 100;
+    public int progresoActual = 0;
+    [SerializeField] private BarraProgreso barraProgreso;
+    [SerializeField] private MenuCondicion menuGameOver;
+    [SerializeField] private MenuCondicion menuYouWin;
 
     private void OnEnable()
     {
@@ -20,15 +22,18 @@ public class MaterialObjetivo : MonoBehaviour
     void Update()
     {
         contador += Time.deltaTime;
-        if (contador >= 1f) // cada 1 segundo
+        if (contador >= 1f) 
         {
             progresoActual += progresoPorSegundo;
-            if (progresoActual > progresoMax)
+            if (progresoActual > progresoMax) {
                 progresoActual = progresoMax;
+                menuYouWin.Activar();
+            }
+
 
             barraProgreso.establecerProgreso(progresoActual);
 
-            contador = 0f; // reiniciamos el contador
+            contador = 0f; 
         }
     }
     public void InfligirDano(int dano)
@@ -56,7 +61,7 @@ public class MaterialObjetivo : MonoBehaviour
 
     public void Muerte()
     {
-        Debug.Log("El Material fue destruido.");
         Destroy(gameObject);
+        menuGameOver.Activar();
     }
 }

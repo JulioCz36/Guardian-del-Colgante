@@ -163,9 +163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaMax: 100
+  vidaActual: 0
   municionMax: 10
   vidaBarra: {fileID: 3133077263767818470, guid: 0095b0adbeecceb4681d71759f47ac71, type: 3}
   municionBarra: {fileID: 460707606917203794, guid: 7aa878d816f4fcd49a4eca44de39860b, type: 3}
+  mi_animator: {fileID: 7780181649894813195}
+  menuGameOver: {fileID: 7485809754879295224, guid: 87ef24175bd0449469abc5ef45a4284f, type: 3}
 --- !u!1 &4087992741821941900
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +251,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.89, y: 14.77712}
+  m_Size: {x: 8.550976, y: 8.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

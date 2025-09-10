@@ -1,14 +1,17 @@
+using System.Collections;
 using UnityEngine;
 
 public class Jugador : MonoBehaviour
 {
     [Header("Configuracion")]
     [SerializeField] private int vidaMax = 100;
-    private int vidaActual;
+    [SerializeField] private int vidaActual;
     [SerializeField] private int municionMax = 10;
-     private int municionActual;
+    private int municionActual;
     [SerializeField] private BarraProgreso vidaBarra;
     [SerializeField] private BarraProgreso municionBarra;
+    [SerializeField] Animator mi_animator;
+    [SerializeField] private MenuCondicion menuGameOver;
 
     private void OnEnable()
     {
@@ -25,7 +28,7 @@ public class Jugador : MonoBehaviour
         if (vidaActual <= 0)
         {
             vidaActual = 0;
-            Morir();
+            StartCoroutine(MorirCoroutine());
         }
     }
     public bool PuedeDisparar()
@@ -44,8 +47,20 @@ public class Jugador : MonoBehaviour
     {
         municionActual = Mathf.Clamp(municionActual + cantidad, 0, municionMax);
     }
-    private void Morir()
+
+    private IEnumerator MorirCoroutine()
     {
-        Debug.Log("Jugador murió");
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        mi_animator.SetTrigger("muerto");
+
+        AnimatorStateInfo state = mi_animator.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForSeconds(state.length);
+
+        Destroy(gameObject);
+
+        menuGameOver.Activar();
     }
 }

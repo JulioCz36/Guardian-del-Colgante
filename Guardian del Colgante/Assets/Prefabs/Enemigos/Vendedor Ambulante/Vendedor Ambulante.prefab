@@ -504,6 +504,8 @@ MonoBehaviour:
   vida: 0
   vidaMax: 20
   barraDeSalud: {fileID: 2118487429181302005}
+  animator: {fileID: 1401236280586426563}
+  barraDeVida: {fileID: 1629135104903134001}
 --- !u!114 &5074825781597429371
 MonoBehaviour:
   m_ObjectHideFlags: 0

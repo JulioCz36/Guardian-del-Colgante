@@ -24,6 +24,7 @@ public class MenuPausa : MonoBehaviour
     public void Resume()
     {
         menuPausaUI.SetActive(false);
+        juegoPausado = false;
         Time.timeScale = 1f;
     }
 
@@ -41,7 +42,8 @@ public class MenuPausa : MonoBehaviour
     }
     public void ReiniciarNivel()
     {
+        juegoPausado = false;
         Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

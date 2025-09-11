@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 [System.Serializable]
 public class PrefabEntry
@@ -16,6 +17,8 @@ public class ControladorRondas : MonoBehaviour
     GameObject spawnerDer;
 
     GameObject enemigosGameobject;
+
+    public TextMeshProUGUI NroRondas;
 
     int ronda = 1;
 
@@ -59,7 +62,10 @@ public class ControladorRondas : MonoBehaviour
     
     void Update()
     {
-        if (enemigosSpawneados > nroEnemigosMax && enemigosGameobject.transform.childCount == 0) {
+        Debug.Log("Enemigos Spawneados: " + enemigosSpawneados);
+        Debug.Log("Nro Enemigos Max: " + nroEnemigosMax);
+        Debug.Log("Cant. enemigos vivos: " + enemigosGameobject.transform.childCount);
+        if (enemigosSpawneados >= nroEnemigosMax && enemigosGameobject.transform.childCount == 0) {
             cambiarDeRonda();
         }
         if (this.estado == "ronda") {
@@ -69,8 +75,18 @@ public class ControladorRondas : MonoBehaviour
                 duracionEntreSpawnDeEnemigosTimer = 0;
             }
         }
+        if (this.estado == "cambio_ronda") { 
+            duractionEntreRondasTimer += Time.deltaTime;
+            if (duractionEntreRondasTimer >= duracionEntreRondas) {
+                this.estado = "ronda";
+                duractionEntreRondasTimer = 0;
+            }
+        }
     }
     void generarEnemigo() {
+
+        if (enemigosSpawneados >= nroEnemigosMax) { return;  }
+
         bool enemigoValido = false;
         bool ladoIzq = false;
         PrefabEntry randomEnemy = null;
@@ -79,7 +95,6 @@ public class ControladorRondas : MonoBehaviour
             ladoIzq = Random.value > 0.5f;
             int randomIndex = Random.Range(0, enemigosPosibles.Length);
             randomEnemy = enemigosPosibles[randomIndex];
-            print(randomEnemy.prefab);
             if (this.ronda < randomEnemy.rondaEnLaQueAparece)
             {
                 continue;
@@ -114,12 +129,15 @@ public class ControladorRondas : MonoBehaviour
         else {
             posicion = spawnerDer.GetComponent<Spawner>().getRandomPosition();
         }
+        enemigosSpawneados += 1;
         Instantiate(randomEnemy.prefab, posicion, Quaternion.identity, enemigosGameobject.transform);
     }
     void cambiarDeRonda() {
         
         this.ronda++;
+        NroRondas.text = this.ronda.ToString();
         print("CAMBIO DE RONDA A " + this.ronda);
+        this.estado = "cambio_ronda";
         actualizarEnemigosMax();
         enemigosSpawneados = 0;
         duractionEntreRondasTimer = 0.0f;

@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 0
-  vidaMax: 20
+  vidaMax: 130
   barraDeSalud: {fileID: 2118487429181302005}
   animator: {fileID: 1401236280586426563}
   barraDeVida: {fileID: 2021993169876757079}
@@ -519,8 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7778be92196954d47a825361df95832f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanciaHastaEmpezarAAtacar: 10
-  cadenciaDeTiroDeCascotes: 1
+  distanciaHastaEmpezarAAtacar: 12
+  cadenciaDeTiroDeCascotes: 1.2
   speed: 6
   danoAJugador: 20
   ataque: {fileID: 1767189840050630980}

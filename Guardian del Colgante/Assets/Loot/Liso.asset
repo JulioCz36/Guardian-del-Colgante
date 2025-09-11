@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootPrefab: {fileID: 4291109236817738250, guid: 563d06163bb99634f8ae9c41675328d6, type: 3}
   lootName: liso
-  dropChance: 15
+  dropChance: 25

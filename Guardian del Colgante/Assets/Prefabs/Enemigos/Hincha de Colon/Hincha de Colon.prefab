@@ -180,8 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanciaHastaEmpezarAAtacar: 15
-  cadenciaDeTiroDeCascotes: 1
-  speed: 5
+  cadenciaDeTiroDeCascotes: 1.5
+  speed: 5.5
   danoAJugador: 15
   ataque: {fileID: 2330103159919009597}
 --- !u!114 &6776876934229380764
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 0
-  vidaMax: 10
+  vidaMax: 120
   barraDeSalud: {fileID: 6250748665797192824}
   animator: {fileID: 1872303554210433905}
   barraDeVida: {fileID: 6329510001549828826}
@@ -382,7 +382,7 @@ MonoBehaviour:
   offsetPosible: 1
   cascotePrefab: {fileID: 5793776095489506585, guid: 2abb09a769e60734cb11bb153231453f, type: 3}
   puntoDisparo: {fileID: 1986370077697971054}
-  fuerzaDisparo: 15
+  fuerzaDisparo: 17
 --- !u!1001 &6262897240117084933
 PrefabInstance:
   m_ObjectHideFlags: 0

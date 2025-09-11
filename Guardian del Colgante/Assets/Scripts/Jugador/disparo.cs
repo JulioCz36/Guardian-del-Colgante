@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class disparo : MonoBehaviour
@@ -17,6 +18,10 @@ public class disparo : MonoBehaviour
     private float timer;
     public float tiempoEntreDisparos;
 
+
+    [Header("Daño del proyectil")]
+    public float danoBase = 3f;
+    private float multiplicadorDano = 1f;
 
     private void OnEnable()
     {
@@ -42,7 +47,8 @@ public class disparo : MonoBehaviour
         nuevaPos.x = Mathf.Clamp(mousePos.x - transform.position.x, -1f, 1f);
         pebeteTransform.localPosition = nuevaPos;
 
-        if (!puedeDisparar) { 
+        if (!puedeDisparar)
+        {
             timer += Time.deltaTime;
             if (timer > tiempoEntreDisparos)
             {
@@ -55,8 +61,29 @@ public class disparo : MonoBehaviour
             puedeDisparar = false;
             jugadorAnimator.SetTrigger("lanzar");
             jugador.UsarBala();
-            Instantiate(pebete, pebeteTransform.position, Quaternion.Euler(0, 0, rotZ));
+
+
+            GameObject nuevoPebete = Instantiate(pebete, pebeteTransform.position, Quaternion.Euler(0, 0, rotZ));
+
+          
+            PebeteScript pebeteScript = nuevoPebete.GetComponent<PebeteScript>();
+            if (pebeteScript != null)
+            {
+                pebeteScript.ConfigurarDamage(danoBase * multiplicadorDano);
+            }
         }
 
+    }
+
+    public void MejorarDanoTemporal(float multiplicador, float duracion)
+    {
+        StartCoroutine(MejorarDanoCoroutine(multiplicador, duracion));
+    }
+
+    private IEnumerator MejorarDanoCoroutine(float multiplicador, float duracion)
+    {
+        multiplicadorDano = multiplicador;
+        yield return new WaitForSeconds(duracion);
+        multiplicadorDano = 1f; // vuelve al normal
     }
 }

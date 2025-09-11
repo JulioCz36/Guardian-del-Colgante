@@ -36,7 +36,7 @@ public class PalomaVuelo : MonoBehaviour
         }
         vieneDesdeIzquierda = zonaPaloma.position.x > transform.position.x;
         if (vieneDesdeIzquierda)
-            transform.localScale = new Vector3(-.5f, .15f, 1); 
+            transform.localScale = new Vector3(-.5f, .5f, 1); 
         else
             transform.localScale = new Vector3(.5f, .5f, 1);
     }

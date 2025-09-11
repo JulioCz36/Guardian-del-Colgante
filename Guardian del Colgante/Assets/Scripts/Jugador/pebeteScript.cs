@@ -35,7 +35,7 @@ public class PebeteScript : MonoBehaviour
         }
     }
 
-    public void ConfigurarDamage(int nuevoDamage)
+    public void ConfigurarDamage(float nuevoDamage)
     {
         dano = nuevoDamage;
     }

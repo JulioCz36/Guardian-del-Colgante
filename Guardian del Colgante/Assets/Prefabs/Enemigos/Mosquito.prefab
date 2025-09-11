@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mosquito: {fileID: 3025878136103082628}
-  danoAJugador: 15
+  danoAJugador: 5
 --- !u!1 &4439780768152736480
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,10 +311,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5967518347388280391}
   velocidadBusqueda: 5
-  velocidadMax: 13
-  distanciaHastaComenzarAtaque: 13
+  velocidadMax: 7
+  distanciaHastaComenzarAtaque: 12
   duracionRetroceso: 1
-  fuerzaRetroceso: 7
+  fuerzaRetroceso: 5
   tiempoCarga: 1.5
   tiempoMaximoDeAtaque: 3
 --- !u!114 &146905421298994512
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 0
-  vidaMax: 10
+  vidaMax: 40
   barraDeSalud: {fileID: 92822206641871961}
   animator: {fileID: 5967518347388280391}
   barraDeVida: {fileID: 9064694364394235}

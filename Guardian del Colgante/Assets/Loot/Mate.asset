@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootPrefab: {fileID: 8582413095047101194, guid: 434e19b429c78cb43b603a1b27ed25c4, type: 3}
   lootName: mate
-  dropChance: 60
+  dropChance: 90

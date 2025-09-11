@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2268398075484199933}
   - component: {fileID: 3635587073292112226}
   - component: {fileID: 2118487429181302005}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: BarraSalud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 9005287744673623847}
   - component: {fileID: 6592798056378192364}
   - component: {fileID: 5127700044167464400}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 9020546394215019707}
   - component: {fileID: 2013661588326172807}
   - component: {fileID: 3492536233789454762}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 5029860064327883880}
   - component: {fileID: 4216089906022150967}
   - component: {fileID: 3265832751477347531}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 0
-  vidaMax: 10
+  vidaMax: 50
   barraDeSalud: {fileID: 2118487429181302005}
   animator: {fileID: 1715938297054418681}
   barraDeVida: {fileID: 2021993169876757079}
@@ -517,12 +517,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01275379e3615ca4189675406899730c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadX: -2.5
+  velocidadX: -5
   waveAmplitude: 0.3
   waveFrequency: 2
   radioX: 2
   radioY: 1
-  velocidadCircular: 1.5
+  velocidadCircular: 2
   zonaPaloma: {fileID: 5608809538984337830, guid: 6d0c255c1b4de26428c74ed7253ef342, type: 3}
   enZonaAtaque: 0
 --- !u!1 &6368823289513059186
@@ -534,7 +534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6847991750613612629}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 3665886675865451580}
   - component: {fileID: 1715938297054418681}
   - component: {fileID: 4031738275569882647}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

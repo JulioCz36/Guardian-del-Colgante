@@ -28,7 +28,9 @@ public class Enemigo : MonoBehaviour
         if (vida <= 0)
         {
             Destroy(barraDeVida);
-            GetComponent<LootBag>().InstantiateLoot(transform.position);
+            LootBag lootBag = GetComponent<LootBag>();
+            if (lootBag != null)
+                lootBag.InstantiateLoot(transform.position);
             foreach (var script in GetComponents<MonoBehaviour>())
             {
                 if (script != this) script.enabled = false;

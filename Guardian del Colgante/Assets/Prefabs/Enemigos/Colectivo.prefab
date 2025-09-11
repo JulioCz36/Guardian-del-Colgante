@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoViejo: {fileID: 4957717517155363832}
-  danoAEstructura: 10
+  danoAEstructura: 22
   danoAJugador: 15
 --- !u!1 &5903741318137246497
 GameObject:
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 0
-  vidaMax: 20
+  vidaMax: 170
   barraDeSalud: {fileID: 2118487429181302005}
   animator: {fileID: 921906921573523336}
   barraDeVida: {fileID: 2021993169876757079}
@@ -606,13 +606,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadBusqueda: 6
-  velocidadMax: 30
-  aceleracionRetroceso: 1.5
-  distanciaHastaComenzarAtaque: 10
+  velocidadMax: 10
+  aceleracionRetroceso: 6
+  distanciaHastaComenzarAtaque: 15
   duracionRetroceso: 2
-  fuerzaRetroceso: 5
+  fuerzaRetroceso: 10
   animator: {fileID: 921906921573523336}
-  tiempoCarga: 2
+  tiempoCarga: 3
   estado: busqueda
 --- !u!70 &5072527785541123019
 CapsuleCollider2D:

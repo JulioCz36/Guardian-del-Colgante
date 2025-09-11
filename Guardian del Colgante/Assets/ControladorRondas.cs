@@ -6,7 +6,7 @@ using TMPro;
 [System.Serializable]
 public class PrefabEntry
 {
-    public GameObject prefab;   // acá arrastrás el prefab
+    public GameObject prefab;   
     public int rondaEnLaQueAparece;
 }
 
@@ -18,8 +18,6 @@ public class ControladorRondas : MonoBehaviour
 
     GameObject enemigosGameobject;
 
-    public TextMeshProUGUI NroRondas;
-
     int ronda = 1;
 
     int enemigosSpawneados = 0;
@@ -29,7 +27,7 @@ public class ControladorRondas : MonoBehaviour
     private float duracionEntreSpawnDeEnemigosTimer = 0.0f;
     public float duracionEntreRondas = 5.0f;
     private float duractionEntreRondasTimer = 0.0f;
-    public PrefabEntry[] enemigosPosibles;  // lista de prefabs con su nombre
+    public PrefabEntry[] enemigosPosibles; 
 
     string estado = "ronda";
 
@@ -135,7 +133,6 @@ public class ControladorRondas : MonoBehaviour
     void cambiarDeRonda() {
         
         this.ronda++;
-        NroRondas.text = this.ronda.ToString();
         print("CAMBIO DE RONDA A " + this.ronda);
         this.estado = "cambio_ronda";
         actualizarEnemigosMax();

@@ -1,12 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class movimiento : MonoBehaviour
 {
     [Header("Configuraciones")]
-    [SerializeField] float velocidad = 5f;
+    [SerializeField] float velocidadBase = 5f;
     [SerializeField] Animator mi_animator;
     [SerializeField] SpriteRenderer spriteRenderer;
 
+    private float velocidadActual;
     private float moverHorizontal;
     private float moverVertical;
     private Vector2 direccion;
@@ -14,10 +16,11 @@ public class movimiento : MonoBehaviour
     private Rigidbody2D mi_rb2d;
 
 
-    // Codigo que es ejecutado cuand el objeto se activa en el nivel
+    private Coroutine boostCoroutine;
     private void OnEnable()
     {
         mi_rb2d = GetComponent<Rigidbody2D>();
+        velocidadActual = velocidadBase;
     }
 
     // Codigo ejecutado en cada frame del juego
@@ -28,22 +31,17 @@ public class movimiento : MonoBehaviour
         moverVertical = Input.GetAxis("Vertical");
         direccion = new Vector2(moverHorizontal, moverVertical);
 
-        if (direccion.magnitude > 1){
+        if (direccion.magnitude > 1)
+        {
             direccion.Normalize();
         }
 
-        if (moverVertical != 0 || moverHorizontal != 0){
-
-            mi_animator.SetBool("inactivo", false);
-        }else
-        {
-            mi_animator.SetBool("inactivo", true);
-        }
+        mi_animator.SetBool("inactivo", direccion == Vector2.zero);
     }
 
     private void FixedUpdate()
     {
-        mi_rb2d.MovePosition(mi_rb2d.position + direccion * (velocidad * Time.fixedDeltaTime));
+        mi_rb2d.MovePosition(mi_rb2d.position + direccion * (velocidadActual * Time.fixedDeltaTime));
     }
 
     public Vector2 GetUltimaDireccion()
@@ -53,10 +51,22 @@ public class movimiento : MonoBehaviour
 
     public void VoltearSegunMouse(Vector3 mousePos)
     {
-        if (mousePos.x < transform.position.x)
-            spriteRenderer.flipX = true;
-        else
-            spriteRenderer.flipX = false;
+        spriteRenderer.flipX = mousePos.x < transform.position.x;
+    }
+
+    public void MejorarVelocidadTemporal(float extraVelocidad, float duracion)
+    {
+        if (boostCoroutine != null)
+            StopCoroutine(boostCoroutine);
+
+        boostCoroutine = StartCoroutine(VelocidadBoost(extraVelocidad, duracion));
+    }
+
+    private IEnumerator VelocidadBoost(float extraVelocidad, float duracion)
+    {
+        velocidadActual = velocidadBase + extraVelocidad;
+        yield return new WaitForSeconds(duracion);
+        velocidadActual = velocidadBase;
     }
 
 }

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootPrefab: {fileID: 2217899261846224069, guid: a35b4959208fc75428e2b00045fb765d, type: 3}
   lootName: empanada
-  dropChance: 20
+  dropChance: 25

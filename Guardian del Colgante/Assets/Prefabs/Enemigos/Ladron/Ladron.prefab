@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 0
-  vidaMax: 10
+  vidaMax: 100
   barraDeSalud: {fileID: 2118487429181302005}
   animator: {fileID: 5794211590099621574}
   barraDeVida: {fileID: 2021993169876757079}
@@ -573,13 +573,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5794211590099621574}
   danoAEstructura: 1
-  danoAJugador: 20
-  speed: 5
-  tiempoDeCaminata: 2
+  danoAJugador: 15
+  speed: 7
+  tiempoDeCaminata: 3
   tiempoDePausa: 1
   anguloZigzag: 15
-  tiempoRobando: 3
-  danoPorSegundo: 5
+  tiempoRobando: 5
+  danoPorSegundo: 8
   puntoEscapeIzquierda: {fileID: 7925303413900032760, guid: 0d66f4d709739ca43a2cc12066ef042c, type: 3}
   puntoEscapeDerecha: {fileID: 233944994165324654, guid: 5e64d5ef5dd863646af1628441ec8085, type: 3}
   bodyBoxCollider: {fileID: 5464395571225600419}

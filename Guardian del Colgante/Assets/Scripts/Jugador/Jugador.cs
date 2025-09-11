@@ -13,6 +13,8 @@ public class Jugador : MonoBehaviour
     [SerializeField] Animator mi_animator;
     [SerializeField] private MenuCondicion menuGameOver;
 
+    [SerializeField] private disparo disparoScript;
+
     private void OnEnable()
     {
         municionActual = municionMax;
@@ -47,6 +49,12 @@ public class Jugador : MonoBehaviour
     {
         municionActual = Mathf.Clamp(municionActual + cantidad, 0, municionMax);
         municionBarra.establecerProgreso(municionActual);
+    }
+
+    public void MejorarDano(float multiplicador, float duracion)
+    {
+        if (disparoScript != null)
+            disparoScript.MejorarDanoTemporal(multiplicador, duracion);
     }
 
     private IEnumerator MorirCoroutine()

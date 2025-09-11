@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f6220c3b8e6a547ab65a0c74244f58, type: 3}
   m_Name: Alfajor
   m_EditorClassIdentifier: 
-  lootSprite: {fileID: 2189712646507832853, guid: e4ab7d7e894a8954c98e376ba6c1f469, type: 3}
+  lootPrefab: {fileID: 1032009467053260885, guid: 532315dada749e74cab0fee8aef4717f, type: 3}
   lootName: alfajor
   dropChance: 40

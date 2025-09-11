@@ -46,6 +46,7 @@ public class Jugador : MonoBehaviour
     public void Recargar(int cantidad)
     {
         municionActual = Mathf.Clamp(municionActual + cantidad, 0, municionMax);
+        municionBarra.establecerProgreso(municionActual);
     }
 
     private IEnumerator MorirCoroutine()

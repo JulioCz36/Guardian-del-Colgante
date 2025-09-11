@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 6385646212774538142}
   - component: {fileID: 82023402994439385}
   - component: {fileID: 8907856673123842728}
+  - component: {fileID: 5171678000906533686}
   m_Layer: 10
   m_Name: Ladron
   m_TagString: Enemigo
@@ -585,6 +586,24 @@ MonoBehaviour:
   objetoRobadoPrefab: {fileID: 8920857025733053000, guid: c6495dbc5a3ba124c91f7046ce6b25ab, type: 3}
   objetoRobadoTransform: {fileID: 5992929720120392052}
   tiempoMostrandoObjeto: 1
+--- !u!114 &5171678000906533686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903741318137246497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4d256c2f0313da46b3f9da350be83e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 4036761147623405317, guid: 540df621c0580df4697282471ca9ed7b, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: d6830b477557e9a46ac605ddf5d04d6c, type: 2}
+  - {fileID: 11400000, guid: 88685505ae7810b4babe97463bac5adc, type: 2}
+  - {fileID: 11400000, guid: 01391330ded48894596435c2356280cc, type: 2}
+  - {fileID: 11400000, guid: 1d3f432b4c2e1fa4688e97c066d0d49a, type: 2}
 --- !u!1 &5992929720120392052
 GameObject:
   m_ObjectHideFlags: 0

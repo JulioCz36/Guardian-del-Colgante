@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f6220c3b8e6a547ab65a0c74244f58, type: 3}
   m_Name: Empanada
   m_EditorClassIdentifier: 
-  lootSprite: {fileID: -2248273014285675650, guid: e4ab7d7e894a8954c98e376ba6c1f469, type: 3}
+  lootPrefab: {fileID: 2217899261846224069, guid: a35b4959208fc75428e2b00045fb765d, type: 3}
   lootName: empanada
   dropChance: 20

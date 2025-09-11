@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f6220c3b8e6a547ab65a0c74244f58, type: 3}
   m_Name: Liso
   m_EditorClassIdentifier: 
-  lootSprite: {fileID: 3357360333254942192, guid: e4ab7d7e894a8954c98e376ba6c1f469, type: 3}
+  lootPrefab: {fileID: 4291109236817738250, guid: 563d06163bb99634f8ae9c41675328d6, type: 3}
   lootName: liso
   dropChance: 15

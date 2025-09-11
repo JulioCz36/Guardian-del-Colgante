@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f6220c3b8e6a547ab65a0c74244f58, type: 3}
   m_Name: Mate
   m_EditorClassIdentifier: 
-  lootSprite: {fileID: -2978653956524333172, guid: e4ab7d7e894a8954c98e376ba6c1f469, type: 3}
+  lootPrefab: {fileID: 8582413095047101194, guid: 434e19b429c78cb43b603a1b27ed25c4, type: 3}
   lootName: mate
   dropChance: 60

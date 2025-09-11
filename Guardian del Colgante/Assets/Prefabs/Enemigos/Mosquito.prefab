@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 4917427615576468947}
   - component: {fileID: 3025878136103082628}
   - component: {fileID: 146905421298994512}
+  - component: {fileID: 3162244400898875194}
   m_Layer: 10
   m_Name: Mosquito
   m_TagString: Enemigo
@@ -333,6 +334,24 @@ MonoBehaviour:
   barraDeSalud: {fileID: 92822206641871961}
   animator: {fileID: 5967518347388280391}
   barraDeVida: {fileID: 9064694364394235}
+--- !u!114 &3162244400898875194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9043317655598107259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4d256c2f0313da46b3f9da350be83e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 4036761147623405317, guid: 540df621c0580df4697282471ca9ed7b, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: d6830b477557e9a46ac605ddf5d04d6c, type: 2}
+  - {fileID: 11400000, guid: 88685505ae7810b4babe97463bac5adc, type: 2}
+  - {fileID: 11400000, guid: 01391330ded48894596435c2356280cc, type: 2}
+  - {fileID: 11400000, guid: 1d3f432b4c2e1fa4688e97c066d0d49a, type: 2}
 --- !u!1001 &80110824127640356
 PrefabInstance:
   m_ObjectHideFlags: 0

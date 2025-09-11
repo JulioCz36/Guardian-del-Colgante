@@ -35,6 +35,11 @@ public class PebeteScript : MonoBehaviour
         }
     }
 
+    public void ConfigurarDamage(int nuevoDamage)
+    {
+        dano = nuevoDamage;
+    }
+
     private void OnBecameInvisible()
     {
         Destroy(gameObject);

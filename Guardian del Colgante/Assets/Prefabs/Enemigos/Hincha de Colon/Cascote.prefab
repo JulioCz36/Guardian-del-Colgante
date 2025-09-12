@@ -201,8 +201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfae5e4338609d44a00c79f431fbc2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  danoAEstructura: 16
-  danoAJugador: 7
+  danoAEstructura: 10
+  danoAJugador: 5
   tiempoDeVida: 3
 --- !u!50 &6792605117218946967
 Rigidbody2D:

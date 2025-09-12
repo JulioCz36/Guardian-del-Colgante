@@ -507,8 +507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoViejo: {fileID: 4957717517155363832}
-  danoAEstructura: 22
-  danoAJugador: 15
+  danoAEstructura: 15
+  danoAJugador: 10
 --- !u!1 &5903741318137246497
 GameObject:
   m_ObjectHideFlags: 0

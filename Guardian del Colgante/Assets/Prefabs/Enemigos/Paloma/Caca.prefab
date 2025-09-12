@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d678f0a6f7812e46946a76000a21ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 7
+  dano: 6
 --- !u!70 &5304680596187027177
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuerza: 15
-  dano: 15
+  dano: 20
 --- !u!50 &8925643083309283111
 Rigidbody2D:
   serializedVersion: 5

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootPrefab: {fileID: 1032009467053260885, guid: 532315dada749e74cab0fee8aef4717f, type: 3}
   lootName: alfajor
-  dropChance: 40
+  dropChance: 45

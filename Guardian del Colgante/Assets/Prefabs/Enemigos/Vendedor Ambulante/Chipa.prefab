@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   danoAEstructura: 7
-  danoAJugador: 20
+  danoAJugador: 8
   tiempoDeVida: 5
 --- !u!50 &7116092366247961369
 Rigidbody2D:

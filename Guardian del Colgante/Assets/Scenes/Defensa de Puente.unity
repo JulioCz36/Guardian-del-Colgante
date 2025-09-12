@@ -841,7 +841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 948}
+  m_AnchoredPosition: {x: 960, y: 959}
   m_SizeDelta: {x: 960.9904, y: 42.5242}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &448345087
@@ -4322,7 +4322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191031205872932017, guid: 2d5abf5e7ebeb0842aa3cb666846d7d5, type: 3}
       propertyPath: vidaMax
-      value: 130
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 191031205872932017, guid: 2d5abf5e7ebeb0842aa3cb666846d7d5, type: 3}
       propertyPath: vidaBarra
@@ -4330,7 +4330,7 @@ PrefabInstance:
       objectReference: {fileID: 608343203}
     - target: {fileID: 191031205872932017, guid: 2d5abf5e7ebeb0842aa3cb666846d7d5, type: 3}
       propertyPath: municionMax
-      value: 55
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 191031205872932017, guid: 2d5abf5e7ebeb0842aa3cb666846d7d5, type: 3}
       propertyPath: menuGameOver
@@ -4394,11 +4394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5100906906790011233, guid: 2d5abf5e7ebeb0842aa3cb666846d7d5, type: 3}
       propertyPath: danoBase
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5100906906790011233, guid: 2d5abf5e7ebeb0842aa3cb666846d7d5, type: 3}
       propertyPath: tiempoEntreDisparos
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

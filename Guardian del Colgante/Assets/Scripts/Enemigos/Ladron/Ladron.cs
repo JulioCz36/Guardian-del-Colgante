@@ -11,7 +11,7 @@ public class Ladron : MonoBehaviour
 
     [Header("Movimiento")]
     public float speed = 3.0f;
-    public float tiempoDeCaminata = 2.0f; 
+    public float tiempoDeCaminata = 2.0f;
     public float tiempoDePausa = 1.0f;
 
     [Header("Zigzag")]
@@ -19,7 +19,7 @@ public class Ladron : MonoBehaviour
     private int direccionZigzag = 1;
 
     [Header("Robo")]
-    public float tiempoRobando = 3f; 
+    public float tiempoRobando = 3f;
     public int danoPorSegundo = 5;
 
     [Header("Puntos de escape")]
@@ -32,7 +32,7 @@ public class Ladron : MonoBehaviour
     [Header("Loot")]
     public GameObject objetoRobadoPrefab;
     public GameObject objetoRobadoTransform;
-    public float tiempoMostrandoObjeto = 1f; 
+    public float tiempoMostrandoObjeto = 1f;
 
     private float contadorMostrarObjeto = 0f;
     private GameObject objetoInstanciado;
@@ -47,11 +47,15 @@ public class Ladron : MonoBehaviour
     private string estado = "caminar";
     private float timer = 0f;
 
+    private Enemigo enemigo;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         materialObjetivo = GameObject.FindGameObjectWithTag("MaterialObjetivo");
         ActualizarDireccion();
+        enemigo = GetComponent<Enemigo>();
+        if (enemigo != null) enemigo.OnDeath += DestruirLoot;
     }
 
     void Update()
@@ -109,7 +113,7 @@ public class Ladron : MonoBehaviour
                     // mostrar objeto robado
                     if (objetoRobadoPrefab != null && objetoRobadoTransform != null)
                     {
-                        objetoInstanciado = Instantiate(objetoRobadoPrefab,objetoRobadoTransform.transform.position,Quaternion.identity,objetoRobadoTransform.transform);
+                        objetoInstanciado = Instantiate(objetoRobadoPrefab, objetoRobadoTransform.transform.position, Quaternion.identity, objetoRobadoTransform.transform);
                         objetoInstanciado.transform.localPosition = Vector3.zero;
                     }
 
@@ -186,5 +190,15 @@ public class Ladron : MonoBehaviour
         estado = "robando";
         contadorRobo = 0f;
         tiempoRobandoTotal = 0f;
+    }
+
+    private void OnDestroy()
+    {
+        if (enemigo != null) enemigo.OnDeath -= DestruirLoot;
+    }
+
+    private void DestruirLoot()
+    {
+        if (objetoInstanciado != null) Destroy(objetoInstanciado);
     }
 }

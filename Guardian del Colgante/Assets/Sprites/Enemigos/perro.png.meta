@@ -1,0 +1,394 @@
+fileFormatVersion: 2
+guid: 9965f69aa7cb3cd469d69ea98767aafe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -263223404332866493
+    second: perro_0
+  - first:
+      213: -1069047251048748409
+    second: perro_1
+  - first:
+      213: 7455653281392075472
+    second: perro_2
+  - first:
+      213: 618762369230480829
+    second: perro_3
+  - first:
+      213: -8165831858300232349
+    second: perro_4
+  - first:
+      213: 119431833032315705
+    second: perro_5
+  - first:
+      213: 4837197267328543001
+    second: perro_6
+  - first:
+      213: 6381210090462941727
+    second: perro_7
+  - first:
+      213: 6122914386265143467
+    second: perro_8
+  - first:
+      213: -4045297604745764653
+    second: perro_9
+  - first:
+      213: 2817722884229901113
+    second: perro_10
+  - first:
+      213: 3476655420829811302
+    second: perro_11
+  - first:
+      213: 7241575945856725827
+    second: perro_12
+  - first:
+      213: -4680205512031505009
+    second: perro_13
+  - first:
+      213: -8200611566720811538
+    second: perro_14
+  - first:
+      213: 2014876729059636936
+    second: perro_15
+  - first:
+      213: -3797452812518488562
+    second: perro_16
+  - first:
+      213: -1159678449083025568
+    second: perro_17
+  - first:
+      213: -6374950162620142311
+    second: perro_18
+  - first:
+      213: 372815122271379237
+    second: perro_19
+  - first:
+      213: -2702218558578699238
+    second: perro_20
+  - first:
+      213: 6465528577650637843
+    second: perro_21
+  - first:
+      213: 90839867376157696
+    second: perro_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: perro_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 62
+        width: 605
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78aa121703bf921f0800000000000000
+      internalID: -1069047251048748409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perro_2
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 62
+        width: 606
+        height: 419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5ac52b819469800800000000000000
+      internalID: 618762369230480829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perro_3
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 64
+        width: 618
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933d3ce8e9e48a100800000000000000
+      internalID: 119431833032315705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perro_4
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 68
+        width: 613
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f129e27a4cc9e8850800000000000000
+      internalID: 6381210090462941727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perro_5
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 80
+        width: 611
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba876779136f8f450800000000000000
+      internalID: 6122914386265143467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perro_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 602
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067fab4489ef7efe0800000000000000
+      internalID: -1159678449083025568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perro_6
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 35
+        width: 627
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14d276b98acf7ad0800000000000000
+      internalID: -2702218558578699238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perro_7
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 40
+        width: 615
+        height: 442
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31cb00c4cfb2ab950800000000000000
+      internalID: 6465528577650637843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bf3c6ccf1eb64f24c8bea5abff3c8486
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      perro_0: -1159678449083025568
+      perro_1: -1069047251048748409
+      perro_10: 2817722884229901113
+      perro_11: 3476655420829811302
+      perro_12: 7241575945856725827
+      perro_13: -4680205512031505009
+      perro_14: -8200611566720811538
+      perro_15: 2014876729059636936
+      perro_16: -3797452812518488562
+      perro_18: -6374950162620142311
+      perro_19: 372815122271379237
+      perro_2: 618762369230480829
+      perro_22: 90839867376157696
+      perro_3: 119431833032315705
+      perro_4: 6381210090462941727
+      perro_5: 6122914386265143467
+      perro_6: -2702218558578699238
+      perro_7: 6465528577650637843
+      perro_9: -4045297604745764653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

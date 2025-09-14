@@ -201,6 +201,7 @@ MonoBehaviour:
   barraDeSalud: {fileID: 6250748665797192824}
   animator: {fileID: 1872303554210433905}
   barraDeVida: {fileID: 6329510001549828826}
+  colliderHijo: {fileID: 7314709986233140001}
 --- !u!70 &2151925061848789701
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

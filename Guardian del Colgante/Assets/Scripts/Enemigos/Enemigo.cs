@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -10,7 +11,10 @@ public class Enemigo : MonoBehaviour
 
     [SerializeField] Animator animator;
     [SerializeField] GameObject barraDeVida;
+    [SerializeField] Collider2D colliderHijo;
     private Rigidbody2D rb;
+
+    public event Action OnDeath;
 
     private void OnEnable()
     {
@@ -28,17 +32,22 @@ public class Enemigo : MonoBehaviour
         if (vida <= 0)
         {
             Destroy(barraDeVida);
+
+            OnDeath?.Invoke();
+
             LootBag lootBag = GetComponent<LootBag>();
-            if (lootBag != null)
-                lootBag.InstantiateLoot(transform.position);
+            if (lootBag != null) lootBag.InstantiateLoot(transform.position);
+            
             foreach (var script in GetComponents<MonoBehaviour>())
             {
                 if (script != this) script.enabled = false;
             }
 
             Collider2D col = GetComponent<Collider2D>();
-            if (col != null)
-                col.enabled = false;
+            if (col != null) col.enabled = false;
+
+            if (colliderHijo != null) colliderHijo.enabled = false;
+
             StartCoroutine(Morir());
         }
     }

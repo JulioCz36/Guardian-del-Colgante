@@ -25,4 +25,9 @@ public class MenuCondicion : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("MenuPrincipal");
     }
+
+    public void SalirDelJuego()
+    {
+        Application.Quit();
+    }
 }

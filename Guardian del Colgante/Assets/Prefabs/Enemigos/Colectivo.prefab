@@ -593,6 +593,7 @@ MonoBehaviour:
   barraDeSalud: {fileID: 2118487429181302005}
   animator: {fileID: 921906921573523336}
   barraDeVida: {fileID: 2021993169876757079}
+  colliderHijo: {fileID: 1502079810073796802}
 --- !u!114 &4957717517155363832
 MonoBehaviour:
   m_ObjectHideFlags: 0

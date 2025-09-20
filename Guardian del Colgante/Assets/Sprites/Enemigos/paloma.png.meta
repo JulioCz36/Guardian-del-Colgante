@@ -450,101 +450,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: paloma_13
-      rect:
-        serializedVersion: 2
-        x: 23143
-        y: 247
-        width: 29
-        height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4cb62ad1550f65d0800000000000000
-      internalID: -3067226972105556916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_14
-      rect:
-        serializedVersion: 2
-        x: 23180
-        y: 247
-        width: 52
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86ff54fa54ad6c440800000000000000
-      internalID: 4955888432796008296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_15
-      rect:
-        serializedVersion: 2
-        x: 23235
-        y: 287
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15671c604bc633550800000000000000
-      internalID: 6139370237499373137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: paloma_16
-      rect:
-        serializedVersion: 2
-        x: 23248
-        y: 256
-        width: 53
-        height: 119
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe36a3e8ef4409bc0800000000000000
-      internalID: -3778444227265272849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: paloma_17
       rect:
         serializedVersion: 2
         x: 23105
         y: 82
         width: 366
-        height: 155
+        height: 390
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

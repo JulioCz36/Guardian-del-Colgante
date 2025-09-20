@@ -16,6 +16,14 @@ public class BarraProgreso : MonoBehaviour
         fill.color = gradient.Evaluate(1f);
     }
 
+    public void establecerMaximoProgreso(int maximo, int progresoInicial)
+    {
+        slider.maxValue = maximo;
+        slider.value = progresoInicial;
+
+        fill.color = gradient.Evaluate(slider.normalizedValue);
+    }
+
     public void establecerProgreso(int progreso)
     {
         slider.value = progreso;

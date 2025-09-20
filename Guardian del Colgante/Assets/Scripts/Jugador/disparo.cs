@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class disparo : MonoBehaviour
 {
@@ -26,10 +27,11 @@ public class disparo : MonoBehaviour
     private void OnEnable()
     {
         mainCamara = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-    }
 
+    }
     void Update()
     {
+
         mousePos = mainCamara.ScreenToWorldPoint(Input.mousePosition);
 
         Vector3 rotation = mousePos - transform.position;
@@ -56,7 +58,7 @@ public class disparo : MonoBehaviour
                 timer = 0;
             }
         }
-        if (Input.GetButton("Fire1") && puedeDisparar && jugador.PuedeDisparar())
+        if (Input.GetButtonDown("Fire1") && !EventSystem.current.IsPointerOverGameObject() && puedeDisparar && jugador.PuedeDisparar())
         {
             puedeDisparar = false;
             jugadorAnimator.SetTrigger("lanzar");

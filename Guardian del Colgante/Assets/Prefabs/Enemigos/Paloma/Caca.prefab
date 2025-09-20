@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7335746429348183871}
   - component: {fileID: 7074204886708864635}
+  - component: {fileID: 7546345110179407845}
   m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
@@ -87,6 +88,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7546345110179407845
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545565196137708744}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c873d80fe8930984cb27852bb24ebab5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6859253233518208586
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dano: 6
+  mi_animator: {fileID: 7546345110179407845}
 --- !u!70 &5304680596187027177
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -57,6 +57,7 @@ public class Enemigo : MonoBehaviour
 
         if (rb != null)
             rb.linearVelocity = Vector2.zero;
+
         animator.SetTrigger("muerto");
 
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);

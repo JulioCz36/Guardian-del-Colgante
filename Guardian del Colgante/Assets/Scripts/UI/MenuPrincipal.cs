@@ -1,15 +1,17 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MenuCondicion : MonoBehaviour
+public class MenuPrincipal : MonoBehaviour
 {
     [SerializeField]
     private SceneController sceneController;
-
-    //por ahora hace esto basico, en caso de agregar mas niveles y opciones se ira escalando
-    public void Reiniciar()
+    public void Jugar()
     {
         sceneController.LoadScene("Nivel 1");
+    }
+
+    public void Opciones()
+    {
+        //SceneManager.LoadScene("Opciones");
     }
 
     public void SalirDelJuego()

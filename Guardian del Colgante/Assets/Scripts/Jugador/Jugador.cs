@@ -11,7 +11,7 @@ public class Jugador : MonoBehaviour
     [SerializeField] private BarraProgreso vidaBarra;
     [SerializeField] private BarraProgreso municionBarra;
     [SerializeField] Animator mi_animator;
-    [SerializeField] private MenuCondicion menuGameOver;
+    [SerializeField] private SceneController sceneController;
 
     [SerializeField] private disparo disparoScript;
 
@@ -70,6 +70,6 @@ public class Jugador : MonoBehaviour
 
         Destroy(gameObject);
 
-        menuGameOver.Activar();
+        sceneController.LoadScene("MenuDerrota");
     }
 }

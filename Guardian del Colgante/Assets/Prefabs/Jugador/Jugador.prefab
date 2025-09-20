@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2632253465122985010}
   m_Layer: 3
   m_Name: Body Collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3355196323759110303}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.99, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4364a84a5ad8a3e4289841d4d36c6cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 8
+  velocidadBase: 6
   mi_animator: {fileID: 7780181649894813195}
   spriteRenderer: {fileID: 5524515348919607194}
 --- !u!114 &191031205872932017
@@ -162,13 +162,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d2c296807f9d842913f0f7d7b6ca70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMax: 100
+  vidaMax: 140
   vidaActual: 0
-  municionMax: 10
-  vidaBarra: {fileID: 3133077263767818470, guid: 0095b0adbeecceb4681d71759f47ac71, type: 3}
-  municionBarra: {fileID: 460707606917203794, guid: 7aa878d816f4fcd49a4eca44de39860b, type: 3}
+  municionMax: 60
+  vidaBarra: {fileID: 0}
+  municionBarra: {fileID: 0}
   mi_animator: {fileID: 7780181649894813195}
-  menuGameOver: {fileID: 7485809754879295224, guid: 87ef24175bd0449469abc5ef45a4284f, type: 3}
+  sceneController: {fileID: 0}
+  disparoScript: {fileID: 5100906906790011233}
 --- !u!1 &4087992741821941900
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +331,7 @@ MonoBehaviour:
   jugadorAnimator: {fileID: 7780181649894813195}
   puedeDisparar: 1
   tiempoEntreDisparos: 0.3
+  danoBase: 20
 --- !u!1 &8654314540674804536
 GameObject:
   m_ObjectHideFlags: 0

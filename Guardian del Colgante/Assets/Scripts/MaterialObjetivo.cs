@@ -9,14 +9,14 @@ public class MaterialObjetivo : MonoBehaviour
     public int progresoMax = 100;
     public int progresoActual = 0;
     [SerializeField] private BarraProgreso barraProgreso;
-    [SerializeField] private MenuCondicion menuGameOver;
-    [SerializeField] private MenuCondicion menuYouWin;
+    [SerializeField] private SceneController sceneController;
+
     private Animator animator;
 
     private void OnEnable()
     {
 
-        barraProgreso.establecerMaximoProgreso(progresoMax);
+        barraProgreso.establecerMaximoProgreso(progresoMax, progresoActual);
         animator = GetComponent<Animator>();
 
     }
@@ -29,7 +29,7 @@ public class MaterialObjetivo : MonoBehaviour
             progresoActual += progresoPorSegundo;
             if (progresoActual > progresoMax) {
                 progresoActual = progresoMax;
-                menuYouWin.Activar();
+                sceneController.LoadScene("MenuVictoria");
             }
 
 
@@ -53,6 +53,6 @@ public class MaterialObjetivo : MonoBehaviour
     public void Muerte()
     {
         Destroy(gameObject);
-        menuGameOver.Activar();
+        sceneController.LoadScene("MenuDerrota");
     }
 }

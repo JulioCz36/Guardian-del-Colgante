@@ -608,10 +608,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadBusqueda: 6
   velocidadMax: 10
-  aceleracionRetroceso: 6
-  distanciaHastaComenzarAtaque: 15
+  aceleracionRetroceso: 3
+  distanciaHastaComenzarAtaque: 10
   duracionRetroceso: 2
-  fuerzaRetroceso: 10
+  fuerzaRetroceso: 5
   animator: {fileID: 921906921573523336}
   tiempoCarga: 3
   estado: busqueda

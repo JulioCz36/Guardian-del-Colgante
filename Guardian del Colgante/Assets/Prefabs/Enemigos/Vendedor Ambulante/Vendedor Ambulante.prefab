@@ -706,7 +706,7 @@ MonoBehaviour:
   offsetPosible: 1
   cascotePrefab: {fileID: 5793776095489506585, guid: 55a330b53e09a654bbdfad86c4bffde8, type: 3}
   puntoDisparo: {fileID: 2593422405236529110}
-  fuerzaDisparo: 22
+  fuerzaDisparo: 18
 --- !u!1 &8988595382290150594
 GameObject:
   m_ObjectHideFlags: 0

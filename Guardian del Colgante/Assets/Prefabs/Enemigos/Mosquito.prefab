@@ -330,10 +330,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 0
-  vidaMax: 40
+  vidaMax: 50
   barraDeSalud: {fileID: 92822206641871961}
   animator: {fileID: 5967518347388280391}
   barraDeVida: {fileID: 9064694364394235}
+  colliderHijo: {fileID: 0}
 --- !u!114 &3162244400898875194
 MonoBehaviour:
   m_ObjectHideFlags: 0
